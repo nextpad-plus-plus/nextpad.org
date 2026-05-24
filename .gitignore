@@ -1,0 +1,24 @@
+# -------------------------------------------------------------------
+# Track ONLY the news/ folder (and this .gitignore).
+# Everything else lives on disk and is deployed via rsync, but is no
+# longer part of the GitHub repo. The "/*" pattern is root-anchored,
+# so it ignores top-level entries only — files INSIDE news/ are not
+# affected by it and remain tracked.
+# Reminder: this only affects new files. Already-tracked files stay
+# in the index until removed with `git rm --cached`.
+# -------------------------------------------------------------------
+/*
+!/news/
+!/.gitignore
+
+# The news page HTML shell is served by nest, not fetched from GitHub —
+# only news/*.md and image assets are runtime-relevant.
+/news/index.html
+
+# Also track /assets/images/ (image assets referenced from elsewhere).
+# Un-ignore the assets/ parent first (gitignore can't re-include a file
+# under an ignored parent), then re-ignore everything one level under
+# assets/, then re-include just assets/images/.
+!/assets/
+/assets/*
+!/assets/images/
