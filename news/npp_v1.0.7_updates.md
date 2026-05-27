@@ -33,7 +33,7 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
 - **Document List panel overhaul** — sortable columns, modified-state floppy   icon, right-click context menus per row (close, copy path, reveal in   Finder).
 
 ![document_list_updated](npp_v1.0.7_updates/document_list_updated.png)
-*Updated Document List Panel* 
+*Updated Document List Panel*
 
 - **Search Results: per-search timestamps** — every Find All / Find in Files   / Find in Projects header line gets a timestamp, so you can tell batches   apart when you accumulate results in the panel.
 
