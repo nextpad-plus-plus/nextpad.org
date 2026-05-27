@@ -2,11 +2,10 @@
 title: "Nextpad++ version 1.0.7 Release notes"
 date: 2026-05-27
 description: Nextpad++ version 1.0.7 Release notes, new plugins and features added
-tags: [nextpad++, new logo]
+tags: [nextpad++, version 1.0.7, release notes, new logo]
 ---
 
-![macos-logo](npp_v1.0.7_updates/macos-logo.png)
-*New application icon starting from Nextpad++ version 1.0.7*
+![macos-logo](npp_v1.0.7_updates/macos-logo.png) *New application icon starting from Nextpad++ version 1.0.7*
 
 # Nextpad++ v1.0.7 — Release Notes
 
@@ -23,8 +22,7 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
   in *Preferences → Editor*. Live-applied to every open buffer; persists
   across launches. Some users wanted to have it to make text more readable.
   
-  ![line_spacing](npp_v1.0.7_updates/line_spacing.png)
-*Adjustable line spacing for better readability*
+  ![line_spacing](npp_v1.0.7_updates/line_spacing.png) *Adjustable line spacing for better readability*
   
 - **Clickable links in the editor** — URLs, file paths, and other configurable
   schemes are auto-detected and openable with a single click. Toggle and
@@ -55,8 +53,7 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
   per-style attributes across the active language. Same control surface and
   semantics as Notepad++ for Windows. Persists to `config.xml`.
   
-  ![style_config_global_override](npp_v1.0.7_updates/style_config_global_override.png)
-    *Style Configuration Global override*  
+  ![style_config_global_override](npp_v1.0.7_updates/style_config_global_override.png) *Style Configuration Global override*  
   
 
 ### Toolbar
@@ -68,8 +65,7 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
   pane.
 
 
-  ![toolbar_colorization](npp_v1.0.7_updates/toolbar_colorization.png)
-    *Toolbar colorization*  
+  ![toolbar_colorization](npp_v1.0.7_updates/toolbar_colorization.png) *Toolbar colorization*  
 
 
 ### Macros
@@ -92,8 +88,7 @@ Three entry points:
 - **Macro menu → *Run Macro on Files…*** — opens the configuration dialog
   with an empty folder picker. Browse to any directory and go.
   
-  ![run_macro_files](npp_v1.0.7_updates/run_macro_files.png)
-    *Run macro on a folder or files* 
+  ![run_macro_files](npp_v1.0.7_updates/run_macro_files.png) *Run macro on a folder or files* 
   
   
 - **Folder-as-Workspace** sidebar — right-click any folder node and pick
