@@ -2,7 +2,7 @@
 title: "Nextpad++ version 1.0.7 Release notes"
 date: 2026-05-27
 description: Nextpad++ version 1.0.7 Release notes, new plugins and features added
-tags: [nextpad++, new logo]
+tags: [nextpad++, version 1.0.7, new release, new logo]
 ---
 
 ![macos-logo](npp_v1.0.7_updates/macos-logo.png) *New application icon starting from Nextpad++ version 1.0.7*
@@ -22,19 +22,19 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
 
 ![line_spacing](npp_v1.0.7_updates/line_spacing.png)
 *Adjustable line spacing for better readability*
-  
+
 - **Clickable links in the editor** — URLs, file paths, and other configurable   schemes are auto-detected and openable with a single click. Toggle and   appearance (underline vs. box, full-box hover) in *Preferences*. Similar to Windows NPP.
-  
+
 - **Find window transparency** — Find/Replace floats over your work with   configurable opacity. Choose "on losing focus" or "always," and tune the   alpha slider 0.2–0.9. Matches Windows NPP's transparency control.
 
 ![find_window_transparency](npp_v1.0.7_updates/find_window_transparency.png)
 *Window transparency*
-  
+
 - **Document List panel overhaul** — sortable columns, modified-state floppy   icon, right-click context menus per row (close, copy path, reveal in   Finder).
 
 ![document_list_updated](npp_v1.0.7_updates/document_list_updated.png)
 *Updated Document List Panel* 
-  
+
 - **Search Results: per-search timestamps** — every Find All / Find in Files   / Find in Projects header line gets a timestamp, so you can tell batches   apart when you accumulate results in the panel.
 
 ### Style Configurator
@@ -43,7 +43,7 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
 
 ![style_config_global_override](npp_v1.0.7_updates/style_config_global_override.png)
 *Style Configuration Global override*
-  
+
 
 ### Toolbar
 
@@ -69,18 +69,16 @@ Three entry points:
 
 ![run_macro_files](npp_v1.0.7_updates/run_macro_files.png)
 *Run macro on a folder or files*
-  
-  
+
 - **Folder-as-Workspace** sidebar — right-click any folder node and pick   *Run Macro on Files…*. The folder path is pre-filled; you just pick a   macro and click Run.
 
 ![macro_batch_folderpanel](npp_v1.0.7_updates/macro_batch_folderpanel.png)
 *Run Macro from the Folder as Workspace Panel*
-  
+
 - **Project Panel** — right-click any workspace, project, or virtual folder   node. Because Project Panel workspaces are XML-based **virtual trees**   (files can live in arbitrary on-disk locations), the dialog presents the   pre-collected, de-duplicated file list instead of a folder; the extension   filter still applies to narrow further.
 
 ![macro_batch_projectpanel](npp_v1.0.7_updates/macro_batch_projectpanel.png)
 *Run Macro from the Project Panel*
-
 
 Configuration options:
 
@@ -110,18 +108,17 @@ Typical workflow: record once — e.g. *Zap Gremlins → Quick Zap* followed by 
 
 ![file_update_silently](npp_v1.0.7_updates/file_update_silently.png)
 *Enable silent updates for saved files*
-  
+
   
 - **"Open with Nextpad++" Finder context-menu item** — right-click any file   in Finder and send it straight to a running (or fresh) instance.
 
 ![finder_context_menus](npp_v1.0.7_updates/finder_context_menus.png)
-*Onen with Nextpad++ finder updates*
-  
+*Open with Nextpad++ finder updates*
+
 - **CLI single-instance routing** — `nextpadplus path/to/file` opens the   file in your running window instead of spawning a second copy of the app.
 
 ![command_line](npp_v1.0.7_updates/command_line.png)
 *Using command line / terminal*
-
 
 
 ### Editor right-click menu
@@ -181,13 +178,12 @@ Five new entries in the Plugin Admin catalog since v1.0.6, taking the total from
 
 ![nppzap_gremlins](npp_v1.0.7_updates/nppzap_gremlins.png)
 *Npp ZapGremlins*
-  
+
 - **DSpellCheck v1.0.0** — multi-language spell checker with bundled   Hunspell. Self-contained (universal binary, no external dependencies),   in-code filtering (skip comments / strings as you prefer), download   dialog for adding language dictionaries, and a debug log for   diagnosing dictionary issues.
 
 ![dspell_check](npp_v1.0.7_updates/dspell_check.png)
 *Npp ZapGremlins*
-  
-  
+
 - **Session Manager v1.0.0** — save and restore named sets of open tabs   as sessions. Switch contexts between projects in one click, auto-save   the current session on quit, manage a sessions library. Native macOS   port of the Windows SessionMgr plugin; sessions stored as Apple plist   files. Unblocked by the host's plugin-API additions in this release   (`NPPM_GETOPENFILENAMES`, session save/load messages, and the   `IDM_FILE_CLOSEALL` menu-command route).
 
 ![session_manager](npp_v1.0.7_updates/session_manager.png)
