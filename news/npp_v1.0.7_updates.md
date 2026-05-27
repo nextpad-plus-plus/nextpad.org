@@ -32,15 +32,13 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
   configurable opacity. Choose "on losing focus" or "always," and tune the
   alpha slider 0.2–0.9. Matches Windows NPP's transparency control.
   
-    ![find_window_transparency](npp_v1.0.7_updates/find_window_transparency.png)
-    *Adjustable line spacing for better readability*
+    ![find_window_transparency](npp_v1.0.7_updates/find_window_transparency.png) *Adjustable line spacing for better readability*
   
 - **Document List panel overhaul** — sortable columns, modified-state floppy
   icon, right-click context menus per row (close, copy path, reveal in
   Finder).
   
-  ![document_list_updated](npp_v1.0.7_updates/document_list_updated.png)
-    *Updated Document List Panel*  
+  ![document_list_updated](npp_v1.0.7_updates/document_list_updated.png) *Updated Document List Panel*  
   
 - **Search Results: per-search timestamps** — every Find All / Find in Files
   / Find in Projects header line gets a timestamp, so you can tell batches
@@ -95,8 +93,7 @@ Three entry points:
   *Run Macro on Files…*. The folder path is pre-filled; you just pick a
   macro and click Run.
   
-  ![macro_batch_folderpanel](npp_v1.0.7_updates/macro_batch_folderpanel.png)
-    *Run Macro from the Folder as Workspace Panel*   
+  ![macro_batch_folderpanel](npp_v1.0.7_updates/macro_batch_folderpanel.png) *Run Macro from the Folder as Workspace Panel*   
   
 - **Project Panel** — right-click any workspace, project, or virtual folder
   node. Because Project Panel workspaces are XML-based **virtual trees**
@@ -105,8 +102,7 @@ Three entry points:
   filter still applies to narrow further.
 
 
-  ![macro_batch_projectpanel](npp_v1.0.7_updates/macro_batch_projectpanel.png)
-    *Run Macro from the Project Panel* 
+  ![macro_batch_projectpanel](npp_v1.0.7_updates/macro_batch_projectpanel.png) *Run Macro from the Project Panel* 
 
 
 Configuration options:
@@ -156,21 +152,18 @@ itself stays a pure transformation; the batch driver owns file lifecycle.
   a file is changed by another process. Toggle "Update silently" to
   auto-reload buffers with no local edits; dirty buffers still prompt. The cursor stays in place.
   
-    ![file_update_silently](npp_v1.0.7_updates/file_update_silently.png)
-    *Enable silent updates for saved files*  
+    ![file_update_silently](npp_v1.0.7_updates/file_update_silently.png) *Enable silent updates for saved files*  
   
   
 - **"Open with Nextpad++" Finder context-menu item** — right-click any file
   in Finder and send it straight to a running (or fresh) instance.
   
- ![finder_context_menus](npp_v1.0.7_updates/finder_context_menus.png)
-    *Onen with Nextpad++ finder updates*  
+ ![finder_context_menus](npp_v1.0.7_updates/finder_context_menus.png) *Open with Nextpad++ finder updates*  
   
 - **CLI single-instance routing** — `nextpadplus path/to/file` opens the
   file in your running window instead of spawning a second copy of the app.
 
- ![command_line](npp_v1.0.7_updates/command_line.png)
-    *Using command line / terminal*  
+ ![command_line](npp_v1.0.7_updates/command_line.png) *Using command line / terminal*  
 
 
 
@@ -265,8 +258,7 @@ total from 24 → 29 macOS-native plugins:
   smart quotes, etc. Ships with a *Quick Zap* command (no UI) and a
   separate *Settings…* screen.
   
-   ![nppzap_gremlins](npp_v1.0.7_updates/nppzap_gremlins.png)
-    *Npp ZapGremlins* 
+   ![nppzap_gremlins](npp_v1.0.7_updates/nppzap_gremlins.png) *Npp ZapGremlins* 
   
 - **DSpellCheck v1.0.0** — multi-language spell checker with bundled
   Hunspell. Self-contained (universal binary, no external dependencies),
@@ -274,8 +266,7 @@ total from 24 → 29 macOS-native plugins:
   dialog for adding language dictionaries, and a debug log for
   diagnosing dictionary issues.
   
-    ![dspell_check](npp_v1.0.7_updates/dspell_check.png)
-    *Npp ZapGremlins*  
+    ![dspell_check](npp_v1.0.7_updates/dspell_check.png) *Npp ZapGremlins*  
   
   
 - **Session Manager v1.0.0** — save and restore named sets of open tabs
@@ -286,9 +277,7 @@ total from 24 → 29 macOS-native plugins:
   (`NPPM_GETOPENFILENAMES`, session save/load messages, and the
   `IDM_FILE_CLOSEALL` menu-command route).
 
-
-    ![session_manager](npp_v1.0.7_updates/session_manager.png)
-    *Session Manager*  
+    ![session_manager](npp_v1.0.7_updates/session_manager.png) *Session Manager*  
 
 
 All five are notarized, stapled, and installable directly through *Plugin
