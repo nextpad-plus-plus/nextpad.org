@@ -214,7 +214,10 @@ Did you know that you can use Markdown Panel to View your Mermaid diagrams (stan
 - **Saved settings** (`~/.nextpad++/config.xml`, `shortcuts.xml`,
   `themes/`, etc.) are read by v1.0.7 unchanged.
   
-**Note:** Keep in mind that starting in September I may start releasing some cool AI plugins that may need up-to-date Nextpad++ application. Check if the app is up to date here    
+**Note:** Keep in mind that starting in September I may start releasing some cool AI plugins that may need up-to-date Nextpad++ application. Check if the app is up to date here.   
+
+![session_manager](npp_v1.0.7_updates/version-check-green.png)
+*Check if Nextpad++ version check*
 
 ---
 
