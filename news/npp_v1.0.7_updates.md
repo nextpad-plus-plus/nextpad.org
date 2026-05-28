@@ -217,7 +217,7 @@ Did you know that you can use Markdown Panel to View your Mermaid diagrams (stan
 **Note:** Keep in mind that starting in September I may start releasing some cool AI plugins that may need up-to-date Nextpad++ application. Check if the app is up to date here.   
 
 ![session_manager](npp_v1.0.7_updates/version-check-green.png)
-*Check if Nextpad++ version check*
+*Nextpad++ version check - Green/Yellow*
 
 ---
 
