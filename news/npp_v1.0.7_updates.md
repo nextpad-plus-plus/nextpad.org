@@ -14,9 +14,9 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
 
 ---
 
-## New Features
+# New Features
 
-### Editor & UX
+## Editor & UX
 
 - **Adjustable line spacing** — pick a multiplier (1.0 / 1.2 / 1.3 / 1.4 / 1.5)   in *Preferences → Editor*. Live-applied to every open buffer; persists   across launches. Some users wanted to have it to make text more readable.
 
@@ -37,7 +37,7 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
 
 - **Search Results: per-search timestamps** — every Find All / Find in Files   / Find in Projects header line gets a timestamp, so you can tell batches   apart when you accumulate results in the panel.
 
-### Style Configurator
+## Style Configurator
 
 - **Global Override** — seven "Force … for all styles" checkboxes   (foreground, background, font, font size, bold, italic, underline) replace   per-style attributes across the active language. Same control surface and   semantics as Notepad++ for Windows. Persists to `config.xml`.
 
@@ -45,7 +45,7 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
 *Style Configuration Global override*
 
 
-### Toolbar
+## Toolbar
 
 - **Icon colorization** — Off / Partial (hue-rotate) / Complete (mono fill)   modes, with nine preset palette choices (red, green, blue, purple, cyan,   olive, yellow, accent) plus a custom NSColor picker. Toggle whether plugin   icons inherit the colorization. Matches Windows NPP's *Toolbar* settings   pane.
 
@@ -53,15 +53,15 @@ resolved, 5 newly-ported plugins shipping alongside the host update, batch proce
 *Toolbar colorization*
 
 
-### Macros
+## Macros
 
 - **Plugin commands in macros** — recording a plugin's menu item now captures   it correctly and replays it on playback. Lets you build keybinds and   saved macros that run, say, *Zap Gremlins* over a selection.
 
 - **Run a Macro Multiple Times** — the dialog's "Run N times" and "Run until   end of file" radios are now properly mutually exclusive, the EOF detector   no longer hangs on zero-width matches, and **Esc** cancels a long run.
 
-### Batch processing — Run Macro on Folders and Files
+## Batch processing — Run Macro on Folders and Files
 
-Apply any saved macro across a whole set of files or folders at once — Nextpad++'s take on BBEdit's *Text Factory*. Pick the macro, pick the files, click Run, walk away.
+Apply any saved macro across a whole set of files or folders at once — Nextpad++'s take on BBEdit's *Text Factory*. Pick the macro, pick the files, click Run, walk away. Remember that calls to plugins can be wrapped inside Macros.
 
 Three entry points:
 
@@ -97,12 +97,12 @@ When finished, a summary dialog reports total / Ok / Skipped / Failed counts and
 
 Typical workflow: record once — e.g. *Zap Gremlins → Quick Zap* followed by *Save* — and let the batch sweep a whole `.cpp` tree, a project's worth of config files, or every Markdown file under a docs directory. The macro itself stays a pure transformation; the batch driver owns file lifecycle.
 
-### Languages
+## Languages
 
 - **User Defined Language extension auto-apply fixes** — `.md`, `.json`, custom   UDL extensions and friends now activate the right styler as soon as the   file opens. The Language menu got a full overhaul, with bundled Markdown   (Light and Dark variants) shipping out of the box.
 - **Theme-aware UDL selection fixes** — switching to Dark Mode automatically pulls   in the dark-tuned UDL variant where available; switching back to Light   reverts.
 
-### File Operations
+## File Operations
 
 - **File Status Auto-Detection + Update Silently** — Nextpad++ detects when   a file is changed by another process. Toggle "Update silently" to   auto-reload buffers with no local edits; dirty buffers still prompt. The cursor stays in place.
 
@@ -121,33 +121,34 @@ Typical workflow: record once — e.g. *Zap Gremlins → Quick Zap* followed by 
 *Using command line / terminal*
 
 
-### Editor right-click menu
+## Editor right-click menu
 
 - **Localized context menu fixes** — switching the app to a non-English language   now retranslates the editor's right-click menu (previously stayed in   English regardless of UI language). Customization via   `~/.nextpad++/contextMenu.xml` continues to work in English — translation   happens at render time.
 
+---
 
-## Stability & Bug Fixes
+# Stability & Bug Fixes
 
-### Crash hardening
+## Crash hardening
 
 - **`$` regex Replace All freeze** — applying a regex like `$ → X` to a   file ending in `\n` used to lock the app for ~20 seconds before terminating   by hard cap. Fixed by introducing a custom Scintilla regex backend with   empty-match continuation semantics that mirror Notepad++ for Windows.   Replace All / Find All / Mark All / Count are all on the fixed path now.
 - **Plugin bufferID crash** — plugins caching a buffer ID across a tab close   used to crash the host when they re-used the stale pointer. Now safely   rejected.
 - **Plugin panel registration crash** — bogus NSView pointers from plugins   no longer take down the host; the registration is guarded by a   heap-allocation check.
 - **Dangling observer crash on teardown** — fixed a rare race during app   quit / window close.
 
-### Editor behavior
+## Editor behavior
 
 - **Change-history markers + horizontal scroll range** behave correctly on   files opened from disk (previously could be misaligned for the first edit).
 - **Markdown UDL stays applied after Dark / Light Mode toggle** — was   reverting to plain text after a theme switch.
 - **Monitoring (tail -f) keeps the caret in place** across reloads —   previously jumped to the top on every refresh.
 - **Tab key navigates between the Find window's controls** as users expect.
 
-### Side panels
+## Side panels
 
 - **Side-panel visibility + Indent Guide toggle persist across launches**.
 - **Plugin commands appear in the editor's right-click menu** (the user-   customized `contextMenu.xml` entries were silently skipped for plugins).
 
-### Plugin notifications
+## Plugin notifications
 
 - **`SCN_DWELLSTART` / `SCN_DWELLEND` are forwarded** to plugins, enabling   hover calltips (NppDoxy-style features).
 
@@ -165,7 +166,7 @@ Together these unblock the SessionMgr port and several other Windows plugins tha
 
 ---
 
-## Newly ported plugins (shipping alongside v1.0.7)
+# Newly ported plugins (shipping alongside v1.0.7)
 
 Five new entries in the Plugin Admin catalog since v1.0.6, taking the total from 24 → 29 macOS-native plugins:
 
@@ -192,6 +193,16 @@ Five new entries in the Plugin Admin catalog since v1.0.6, taking the total from
 
 All five are notarized, stapled, and installable directly through *Plugin Admin → Available* inside Nextpad++. Note that if a plugin doesn't have a UI or a shortcut, you can always add a shortcut to it, wrap it in a Macro and run it on the entire folder.
 
+---
+
+# Tips
+
+Did you know that you can use Markdown Panel to View your Mermaid diagrams (stand-alone or embedded into .md files)
+
+![session_manager](npp_v1.0.7_updates/mmd_preview.png)
+*Mermaid Diagram*
+
+  
 ---
 
 # Compatibility
