@@ -1,7 +1,7 @@
 ---
 title: "Nextpad++ version 1.0.8 Release notes"
 date: 2026-06-15
-description: Nextpad++ version 1.0.8 Release notes — the macOS Tahoe "Liquid Glass" redesign, User Defined Language Browser with 1300+ languages and ability to import from Sublime, an advanced Boost regex engine, and Windows-macro import
+description: Nextpad++ version 1.0.8 Release notes — macOS Tahoe Look, UDL Admin with 1300+ languages, NineZip plugin. Coming on Tuesday, June 16th
 tags: [nextpad++, version 1.0.8, new release, tahoe, liquid glass]
 ---
 
@@ -19,9 +19,7 @@ Successor to **v1.0.7** (May 27th, 2026). This is a substantial visual release s
 
 ![tahoe-look-beta2](npp_v1.0.8_updates/tahoe_look_beta2.png) *Nextpad++ v1.0.8 Tahoe Look Light*
 
-macOS 26 "Tahoe" introduced Apple's *Liquid Glass* design language, and Nextpad++ v1.0.8 is getting ready for it.
-
-You opt in with a single checkbox in **Preferences → General → "Switch to the New Tahoe look (Beta)"**. Leave it off and nothing changes — the Classic interface is byte-for-byte what you have today in 1.0.7, and it stays the default. Turn it on (best on macOS 26, where the system glass materials are available) and the app transforms. Tahoe Look also works on Sequoia but adds more spacing between icon groups. 
+**macOS 26** "Tahoe" introduced Apple's *Liquid Glass* design language, and Nextpad++ v1.0.8 is getting ready for it. You can enable it with a single checkbox in **Preferences → General → "Switch to the New Tahoe look (Beta)"**. Leave it off and nothing changes — the Classic interface is byte-for-byte what you have today in 1.0.7, and it stays the default. Turn it on (best on macOS 26, where the system glass materials are available) and the app transforms. Tahoe Look also works on Sequoia but adds more spacing between icon groups. 
 
 
 ![tahoe-look-beta-prefs](npp_v1.0.8_updates/switch_to_tahoe_pref.png) *Nextpad++ v1.0.8 Tahoe Look*
@@ -43,7 +41,7 @@ What the Tahoe look brings:
 
 
 
-The Classic look is untouched and fully supported — Nextpad++ still runs the way it always has on every macOS version from 12 onward. Tahoe is an opt-in skin for people on the latest OS who want their editor to feel more native and with condensed Toolbar. Because it's still maturing, I  labeled it Beta. Expect continued polish in upcoming releases.
+The Classic look is untouched and fully supported and you can switch between Tahoe and Classic look any time. Nextpad++ still runs the way it always has on every macOS version from 12 onward. Tahoe is an opt-in skin for people on the latest OS who want their editor to feel more native with condensed Toolbar. Because it's still maturing, I  labeled it Beta. Expect continued polish and bug fixes in upcoming releases.
 
 ![tahoe-classic-look](npp_v1.0.8_updates/classic_look.png)*Classic Look*
 
@@ -54,7 +52,7 @@ The Classic look is untouched and fully supported — Nextpad++ still runs the w
 
 ## User Defined Language browser (UDL Admin)
 
-Syntax highlighting for languages Nextpad++ doesn't know natively comes from **User Defined Languages (UDLs)** — and now there's a proper storefront for them. So you don't need to manually copy User Defined language UDL files and match Auto Completion files.  The new **UDL Admin** window works just like Plugin Admin, but for language definitions: browse a catalog of about 1300+ items, install with one click, and remove just as easily. It's promoted to a top-level item in the **Language** menu. 
+Syntax highlighting for languages Nextpad++ doesn't know natively comes from **User Defined Languages (UDLs)**. Now there's a proper storefront for them so you don't need to manually download and copy User Defined language UDL files and match Auto Completion files.  The new **UDL Admin** window works just like Plugin Admin, but for language definitions: browse a catalog of about 1300+ Languages, install with one click, and remove just as easily. It's promoted to a top-level item in the **Language** menu. Localization to be added.
 
 
 ![udl-admin](npp_v1.0.8_updates/udl_admin02.png)*User-Defined Language Admin*
@@ -62,7 +60,7 @@ Syntax highlighting for languages Nextpad++ doesn't know natively comes from **U
 
 - **A large bundled catalog** — over 1,300 entries from the community collection, including many Sublime-Text syntax definitions and Auto Completion, so there's a good chance the language you need is already there.
 
-- **Autocompletion comes along for the ride** — many UDLs carry their own API list, so installing a language can also give you the per-language completion described above. The window shows which sources each entry provides and what Auto Completion files are merged.
+- **Autocompletion comes along for the ride** — many UDLs carry their own API list, so installing a language can also give you the per-language completion described above. The window shows which sources each entry provides and what Auto Completion files are merged from Notepad++ repo and SublimeText repo which gives you a merged super-set.
 
 - **Sortable, searchable** — find what you need fast, with a search box and sortable columns matching the Plugin Admin layout.
 
@@ -85,8 +83,8 @@ If you're coming from Notepad++ on Windows, your recorded macros can come with y
 
 ## Help menu
 
-The **"?"** menu has been renamed to **"Help"** and now hosts the standard macOS **Help search box**, so you can search the menu bar the way you do in every other Mac app. 
-In the future versions 1.0.9 or 1.1.0 I may re-shuffle the main menus specially for Tahoe Look but will keep Classic existing 
+The **"?"** menu has been renamed to **"Help"** to make it macOS native. Now it hosts the standard macOS **Help search box**, so you can search the menu bar the way you do in every other Mac app. 
+In the future versions (1.0.9 or 1.1.0) there is a plan to re-shuffle main menus specially for Tahoe Look to make them more user-friendly on macOS. However, I will always keep original Classic menu layout to switch to in Preferences.
 
 ![help-menu](npp_v1.0.8_updates/help_menu.png)*Help Menu instead of ?*
 
@@ -183,11 +181,7 @@ All plugins are notarized, stapled, and installable directly through *Plugin Adm
 
 Three community pull requests landed in this release: column-selection-to-multi-editing (#165), Light-Mode search-result chrome (#170), and regex end-of-line matching (#179). Thank you for making Nextpad++ better — issues and PRs are always welcome on GitHub.
 
----
 
-# Tips
-
-The new **".d" autocompletion folders** are the easiest way to teach Nextpad++ about your own APIs: find the language's folder, drop in an XML file with your functions, and the suggestions appear next time you open a matching file — no settings to touch.
 
 ---
 
