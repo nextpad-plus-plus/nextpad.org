@@ -152,7 +152,7 @@ The Plugin Admin catalog has grown to **34 macOS-native ported plugins**. New si
 ![ftp_plugin](npp_v1.0.8_updates/ftp_plugin.png)*FTP Plugin*
 
 
-- **NineZip v1.0.0** — absolutely new plugin I had to built **powered by 7-Zip**. Natively macOS doesn't have a great archive utility that would allow you to preview what you extract or extract only specific files (it's all or none). To solve this issue I had to built this plugin to Open and browse archives — 7z, ZIP, RAR, TAR, GZ, and more — in a dockable panel without leaving the editor, or open the file directly from an archive for editing and on-save it's refreshed in the arhive. It should be very very intuitive to use and has similar UI approach that you find in Windows 7zip.
+- **NineZip v1.0.0** — absolutely new plugin I had to built **powered by 7-Zip**. Natively macOS doesn't have a great archive utility that would allow you to preview what you extract or extract only specific files (it's all or none). To solve this issue I had to built this plugin to Open and browse archives — 7z, ZIP, RAR, TAR, GZ, and more — in a dockable panel without leaving the editor. Open a file directly from an archive for editing and on-save it's refreshed back to the arhive. It pretty intuitive to use and has compressed format support and similar UI approach that you find in Windows 7zip.
 
 ![nine-zip](npp_v1.0.8_updates/ninezip_plugin.png)*NineZip Archive/zip etc Plugin*
 
@@ -179,7 +179,7 @@ All plugins are notarized, stapled, and installable directly through *Plugin Adm
 
 # Thanks to our contributors
 
-Three community pull requests landed in this release: column-selection-to-multi-editing (#165), Light-Mode search-result chrome (#170), and regex end-of-line matching (#179). Thank you for making Nextpad++ better — issues and PRs are always welcome on GitHub.
+Three community pull requests landed in this release: column-selection-to-multi-editing (#165), Light-Mode search-result chrome (#170), and regex end-of-line matching (#179). Thank you for making Nextpad++ better — Issues and PRs are always welcome.
 
 
 
@@ -187,13 +187,13 @@ Three community pull requests landed in this release: column-selection-to-multi-
 
 # Compatibility
 
-- **macOS deployment target**: 11.0+
+- **macOS deployment target**: 12.0+
 - **Architecture**: universal (arm64 + x86_64)
-- **macOS Tahoe (26)**: the new Liquid Glass look is fully supported and opt-in; the Classic interface remains the default on every macOS version.
+- **macOS Tahoe (26)**: the new Liquid Glass look is supported and opt-in; the Classic interface remains the default on every macOS version.
 - **Plugin API**: backward-compatible. Plugins built for v1.0.7 keep working.
 - **Saved settings** (`~/.nextpad++/config.xml`, `shortcuts.xml`, `themes/`, etc.) are read by v1.0.8 unchanged; your existing Classic toolbar layout is never touched by the separate Tahoe configuration.
 
-**Note:** Keep an eye out — some cool upcoming AI plugins this fall may need an up-to-date Nextpad++. You can check whether the app is current right from the menu.
+**Note:** Keep an eye out for some cool upcoming AI plugins this fall for which may need an up-to-date Nextpad++. You can check whether the app is current right from the Nextpad++ menu.
 
 ![version-check](npp_v1.0.8_updates/version-check-green.png)
 *Nextpad++ version check — Green/Yellow*
