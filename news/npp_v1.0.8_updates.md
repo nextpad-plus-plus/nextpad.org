@@ -154,7 +154,7 @@ The Plugin Admin catalog has grown to **34 macOS-native ported plugins**. New si
 
 - **NextZip v1.0.0** — absolutely new plugin I had to built **powered by 7-Zip**. Natively macOS doesn't have a great archive utility that would allow you to preview what you extract or extract only specific files (it's all or none). To solve this issue I had to built this plugin to Open and browse archives — 7z, ZIP, RAR, TAR, GZ, and more — in a dockable panel without leaving the editor. Open a file directly from an archive for editing and on-save it's refreshed back to the archive. It pretty intuitive to use and has compressed format support and similar UI approach that you find in Windows 7zip.
 
-![nine-zip](npp_v1.0.8_updates/ninezip_plugin.png)*NextZip Archive/zip etc Plugin*
+![nine-zip](npp_v1.0.8_updates/nextzip_plugin.png)*NextZip Archive/zip etc Plugin*
 
 
 - **Poor Man's T-SQL Formatter v1.0.0** — reformat and beautify SQL with full control over casing, indentation, and clause layout. A faithful reimplementation validated byte-for-byte against the Windows formatter's output.
