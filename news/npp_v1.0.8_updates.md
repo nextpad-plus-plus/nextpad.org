@@ -1,7 +1,7 @@
 ---
 title: "Nextpad++ version 1.0.8 Release notes"
 date: 2026-06-15
-description: Nextpad++ upcoming version 1.0.8 Release notes — Tahoe Look, UDL Admin with 1300+ languages, NineZip plugin. Coming on Tuesday, June 16th
+description: Nextpad++ upcoming version 1.0.8 Release notes — Tahoe Look, UDL Admin with 1300+ languages, NextZip plugin. Coming on Tuesday, June 16th
 tags: [nextpad++, version 1.0.8, new release, tahoe, liquid glass]
 ---
 
@@ -9,7 +9,7 @@ tags: [nextpad++, version 1.0.8, new release, tahoe, liquid glass]
 
 # Nextpad++ v1.0.8 — Release Notes
 
-Successor to **v1.0.7** (May 27th, 2026). This is a substantial visual release since the port began: a **macOS Tahoe "Liquid Glass" redesign**,  per-language autocompletion with a brand-new **User Defined Language Admin Browser**, an **Optional advanced Boost regex engine (ported from Notepad++**, and the ability to **import macros recorded on Notepad++ for Windows**. 100 commits, 20+ reported issues resolved, and 3 community pull requests merged. New NineZip Plugin. Power and keeping it user-friendly is the main goal of Nextpad++. The Nextpad++ release 1.0.8 will be available for download on Tuesday, June 16th. See all details below.
+Successor to **v1.0.7** (May 27th, 2026). This is a substantial visual release since the port began: a **macOS Tahoe "Liquid Glass" redesign**,  per-language autocompletion with a brand-new **User Defined Language Admin Browser**, an **Optional advanced Boost regex engine (ported from Notepad++**, and the ability to **import macros recorded on Notepad++ for Windows**. 100 commits, 20+ reported issues resolved, and 3 community pull requests merged. New NextZip Plugin. Power and keeping it user-friendly is the main goal of Nextpad++. The Nextpad++ release 1.0.8 will be available for download on Tuesday, June 16th. See all details below.
 
 ---
 
@@ -152,9 +152,9 @@ The Plugin Admin catalog has grown to **34 macOS-native ported plugins**. New si
 ![ftp_plugin](npp_v1.0.8_updates/ftp_plugin.png)*FTP Plugin*
 
 
-- **NineZip v1.0.0** — absolutely new plugin I had to built **powered by 7-Zip**. Natively macOS doesn't have a great archive utility that would allow you to preview what you extract or extract only specific files (it's all or none). To solve this issue I had to built this plugin to Open and browse archives — 7z, ZIP, RAR, TAR, GZ, and more — in a dockable panel without leaving the editor. Open a file directly from an archive for editing and on-save it's refreshed back to the arhive. It pretty intuitive to use and has compressed format support and similar UI approach that you find in Windows 7zip.
+- **NextZip v1.0.0** — absolutely new plugin I had to built **powered by 7-Zip**. Natively macOS doesn't have a great archive utility that would allow you to preview what you extract or extract only specific files (it's all or none). To solve this issue I had to built this plugin to Open and browse archives — 7z, ZIP, RAR, TAR, GZ, and more — in a dockable panel without leaving the editor. Open a file directly from an archive for editing and on-save it's refreshed back to the archive. It pretty intuitive to use and has compressed format support and similar UI approach that you find in Windows 7zip.
 
-![nine-zip](npp_v1.0.8_updates/ninezip_plugin.png)*NineZip Archive/zip etc Plugin*
+![nine-zip](npp_v1.0.8_updates/ninezip_plugin.png)*NextZip Archive/zip etc Plugin*
 
 
 - **Poor Man's T-SQL Formatter v1.0.0** — reformat and beautify SQL with full control over casing, indentation, and clause layout. A faithful reimplementation validated byte-for-byte against the Windows formatter's output.
