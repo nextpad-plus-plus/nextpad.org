@@ -109,7 +109,7 @@ In the future versions (1.0.9 or 1.1.0) there is a plan to re-shuffle main menus
 
 ## Files & Encoding
 
-- **Standardized user data folder location** Nextpad++ v1.0.7 and prior stored its user data (config, session, plugins, backups, themes, UDLs, etc.) in the hidden ~/.nextpad++ folder. Starting from Nextpad++ v1.0.8 it's automatically moved to ~/Library/Application Support/Nextpad++ folder with a one-time on-the-fly seamless migration of existing installs. ALong with this change the backup folder and Cloud settings were enabled in line with Notepad++. In NExtpad++ version 1.1.0 these will go beyond what's available in Notepad++ on Windows.
+- **Standardized user data folder location** Nextpad++ v1.0.7 and prior stored its user data (config, session, plugins, backups, themes, UDLs, etc.) in the hidden ~/.nextpad++ folder. Starting from Nextpad++ v1.0.8 it's automatically moved to ~/Library/Application Support/Nextpad++ folder with a one-time on-the-fly seamless migration of existing installs. Along with this change the backup folder and Cloud settings were enabled in line with Windows Notepad++. In Nextpad++ version 1.1.0/1.1.1 these will go beyond what's available in Notepad++ on Windows. 
 
 ![cloud_prefs](npp_v1.0.8_updates/preferences_cloud.png)*Cloud Preferences*
 
