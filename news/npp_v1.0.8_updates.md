@@ -9,7 +9,9 @@ tags: [nextpad++, version 1.0.8, new release, tahoe, liquid glass]
 
 # Nextpad++ v1.0.8 — Release Notes
 
-Successor to **v1.0.7** (May 27th, 2026). This is a substantial visual release since the port began: a **macOS Tahoe "Liquid Glass" redesign**,  per-language autocompletion with a brand-new **User Defined Language Admin Browser**, an **Optional advanced Boost regex engine (ported from Notepad++**, and the ability to **import macros recorded on Notepad++ for Windows**. 100 commits, 20+ reported issues resolved, and 3 community pull requests merged. New NextZip Plugin. Power and keeping it user-friendly is the main goal of Nextpad++. The Nextpad++ release 1.0.8 will be available for download on Tuesday, June 16th. See all details below.
+Successor to **v1.0.7** (May 27th, 2026). This is a substantial visual release since the port began: a **macOS Tahoe "Liquid Glass" redesign**,  per-language autocompletion with a brand-new **User Defined Language Admin Browser**, an **Optional advanced Boost regex engine (ported from Notepad++**, the ability to **import macros recorded on Notepad++ for Windows** and macOS Standardized user data folder location. 20+ reported issues resolved, and 3 community pull requests merged. New NextZip Plugin. Keeping the Editor very user-friendly is the main goal of Nextpad++. 
+
+The Nextpad++ release 1.0.8 will be available for download on Tuesday, June 16th. See all details below.
 
 ---
 
@@ -107,6 +109,13 @@ In the future versions (1.0.9 or 1.1.0) there is a plan to re-shuffle main menus
 
 ## Files & Encoding
 
+- **Standardized user data folder location** Nextpad++ v1.0.7 and prior stored its user data (config, session, plugins, backups, themes, UDLs, etc.) in the hidden ~/.nextpad++ folder. Starting from Nextpad++ v1.0.8 it's automatically moved to ~/Library/Application Support/Nextpad++ folder with a one-time on-the-fly seamless migration of existing installs. ALong with this change the backup folder and Cloud settings were enabled in line with Notepad++. In NExtpad++ version 1.1.0 these will go beyond what's available in Notepad++ on Windows.
+
+![cloud_prefs](npp_v1.0.8_updates/preferences_cloud.png)*Cloud Preferences*
+
+![backup_prefs](npp_v1.0.8_updates/preferences_backup.png)*Backup Preferences*
+
+
 - **CJK encoding, fixed both ways** — saving **GB2312** files used to fail outright on macOS (the OS recognizes the encoding but ships no converter); it's now remapped to GBK/CP936 and round-trips cleanly, exactly like Windows. And non-UTF-8 CJK files — GBK, Big5, Shift-JIS, EUC-KR — are **auto-detected on open** instead of opening as Western-1252 "mojibake" gibberish. Western files are unaffected.
 
 ---
@@ -179,7 +188,7 @@ All plugins are notarized, stapled, and installable directly through *Plugin Adm
 
 # Thanks to our contributors
 
-Three community pull requests landed in this release: column-selection-to-multi-editing (#165), Light-Mode search-result chrome (#170), and regex end-of-line matching (#179). Thank you for making Nextpad++ better — Issues and PRs are always welcome.
+Three community pull requests landed in this release: column-selection-to-multi-editing (#165), Light-Mode search-result chrome (#170), and regex end-of-line matching (#179), Storing user data under ~/Library/Application Support/Nextpad++ instead of ~/nextpad++ folder (#211). Thank you for making Nextpad++ better — Issues and PRs are always welcome, .
 
 
 
