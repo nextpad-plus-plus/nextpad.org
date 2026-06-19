@@ -11,7 +11,7 @@ tags: [nextpad++, version 1.0.8, new release, tahoe, liquid glass]
 
 Successor to **v1.0.7** (May 27th, 2026). This is a substantial visual release since the port began: a **macOS Tahoe "Liquid Glass" redesign**,  per-language autocompletion with a brand-new **User Defined Language Admin Browser**, an **Optional advanced Boost regex engine (ported from Notepad++**, the ability to **import macros recorded on Notepad++ for Windows** and macOS Standardized user data folder location. 20+ reported issues resolved, and 3 community pull requests merged. New NextZip Plugin. Keeping the Editor very user-friendly is the main goal of Nextpad++. 
 
-The Nextpad++ release 1.0.8 will be available for download on Tuesday, June 16th. See all details below.
+**Note:** If you have been experiencing issues on macOS Tahoe with discrete mouse-wheel scrolling the patch is already applied. Simply Download the Nextpad++ v1.0.8 DMG file again and reinstall it. (patch added on June 19th, 2026).   
 
 ---
 
