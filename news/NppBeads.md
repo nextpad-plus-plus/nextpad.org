@@ -8,7 +8,7 @@ tags: [nextpad++, ai, beads, beads viever]
 ![Chameleon walking on Beads](beads-v1/beads-walking-frog.png)
 *Chameleon walking on Beads*
 <div style="text-align: center">
- <download-button href="https://github.com/nextpad-plus-plus/NppBeads/releases/download/v0.9.1/BeadsViewer_0.9.1.dmg" variant="primary" icon="download">Download Beads Viewer DMG (Universal)</download-button>
+ <download-button href="https://github.com/nextpad-plus-plus/NppBeads/releases/download/v0.9.2/BeadsViewer_0.9.2.dmg" variant="primary" icon="download">Download Beads Viewer DMG (Universal)</download-button>
  <download-button href="https://github.com/nextpad-plus-plus/NppBeads" variant="secondary" icon="github">View NppBeads Source on GitHub</download-button>
 </div>
 
