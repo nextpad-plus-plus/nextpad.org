@@ -1,7 +1,7 @@
 ---
 title: "Nextpad++ version 1.0.8 Release notes"
 date: 2026-06-15
-description: Nextpad++ upcoming version 1.0.8 Release notes — Tahoe Look, UDL Admin with 1300+ languages, NextZip plugin. Coming on Tuesday, June 16th
+description: Nextpad++ upcoming version 1.0.8 Release notes — Tahoe Look, UDL Admin with 1300+ languages, NextZip plugin.
 tags: [nextpad++, version 1.0.8, new release, tahoe, liquid glass]
 ---
 
