@@ -134,11 +134,13 @@ The Plugin Admin catalog has grown from **34** macOS-native plugins in v1.0.8 to
 **Notable plugin updates this cycle:**
 
 - **ComparePlus v1.0.7** — the diff plugin (which shipped its side-by-side Navigation Bar in the 1.0.8 cycle) picks up a Clear-compare tab fix and a rebuild, and its in-source version stamp is now in sync.
-- **Markdown Panel v1.0.6** — added squared flow diagrams, toolbar buttons, PDF export, and preview zoom.
+- **Markdown Panel v1.0.6** — added Squared flow diagrams, toolbar buttons, PDF export and HTML export, and preview zoom. 
 
+![plugins-catalog](npp_v1.0.9_updates/squared-flow-charts.png) *Markdown plugin Mermaid Squared flow diagrams*
 
+If you have a folder full of markdown files which you need to export, you can record a Markdown to PDF/HTML as a Macro and then simply run Batch recursively on the entire folder of markdown files.   
 
-![plugins-catalog](npp_v1.0.9_updates/squared-flow-charts.png) *Markdown plugin mermaid squared flow diagrams*
+![plugins-catalog](npp_v1.0.9_updates/markdown-batch-processing.png) *Markdown to PDF or HTML Export on the entire folder*
 
 
 - **QuickText v1.0.3** — snippet expansion now understands UDL / `L_USER` buffers (paired with the host API change above), so per-language snippets fire in User Defined Languages too.
