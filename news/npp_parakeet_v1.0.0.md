@@ -238,7 +238,7 @@ Each speech model remembers its **own** settings, so you can keep Small on beam 
 
 # Batch mode: run Parakeet on a whole folder at once
 
-![batch_mode](npp_parakeet_v1.0.0/macro_batch_mode.png) *Batch mode*
+![batch_mode](npp_parakeet_v1.0.0/batch_mode.png) *Batch mode*
 
 Got fifty meeting recordings to transcribe? A folder of notes to summarize or translate? You don't have to do them one by one.
 
