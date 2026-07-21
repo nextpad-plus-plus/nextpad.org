@@ -2,7 +2,7 @@
 title: "Parakeet AI Plugin v1.0.0 — Voice notes, meeting transcription, summaries and translation for Nextpad++"
 date: 2026-07-20
 description: A complete guide to Parakeet — a private, on-device voice plugin for Nextpad++. Live transcription, meeting capture with You/Them labels, AI summaries, and translation all across 200 languages. It's your private Granola notepad on device.
-tags: [nextpad++, parakeet, transcription, whisper, translation, meetings, AI]
+tags: [nextpad++, transcription, whisper, translation, meetings, AI]
 ---
 
 ![parakeet-hero](npp_parakeet_v1.0.0/parakeet_logo.png) *Parakeet v1.0.0 — your voice, straight into the editor*
@@ -73,12 +73,12 @@ The standard summarizer (about 1.2 GB) downloads by itself in the background the
 
 ![parakeet-recording](npp_parakeet_v1.0.0/record01.png) *Live transcription streaming into a tab*
 
-Press **Record** (or **Plugins → Parakeet → Start / Stop Voice Note**). Parakeet opens a fresh tab titled with the date and streams your words into it as you speak — a floating level meter confirms it can hear you. Press **Record** again to stop; the transcript wraps up within a few seconds.
+Press **Record** in the panel. Parakeet opens a fresh tab titled with the date and streams your words into it as you speak — a floating level meter confirms it can hear you. Press **Record** again to stop; the transcript wraps up within a few seconds.
 
 Three ways to capture speech:
 
 - **Voice note** — the button above; a new dated tab.
-- **Dictate at Caret** (**Plugins → Parakeet → Dictate at Caret**) — the same live transcription, but inserted at your cursor inside whatever document you're already editing. Perfect for dictating a paragraph into notes or a code comment.
+- **Dictate into your document** — tick **Use current tab** and the same live transcription flows into the document you're already editing instead (details just below). Perfect for dictating a paragraph into notes or a code comment.
 - **Transcribe a file** — click **…**, choose any audio or video file (anything QuickTime can open), and Parakeet transcribes it into a new tab — including speaker labels if enabled.
 
 ![parakeet-recording](npp_parakeet_v1.0.0/transcribe01.png) *File transcription streaming into a tab*
@@ -236,6 +236,37 @@ Each speech model remembers its **own** settings, so you can keep Small on beam 
 
 ---
 
+# Batch mode: run Parakeet on a whole folder at once
+
+![batch_mode](npp_parakeet_v1.0.0/macro_batch_mode.png) *Batch mode*
+
+Got fifty meeting recordings to transcribe? A folder of notes to summarize or translate? You don't have to do them one by one.
+
+The three commands in the **Plugins → Parakeet** menu — **Transcribe Audio File**, **Summarize**, and **Translate** — are built for exactly this. Unlike the panel's buttons, they work **quietly in the background**: no new tabs open, no windows pop up, and the result is simply saved as a file **right next to the original**:
+
+| You run… | You get… |
+|---|---|
+| Transcribe Audio File on `standup.m4a` | `standup_transcript.md` in the same folder |
+| Summarize on `interview.md` | `interview_summary.md` |
+| Translate (target: French) on `notes.md` | `notes_French.md` |
+
+Because they're quiet and self-contained, they can be **recorded into a macro** — and Nextpad++ can run a macro over an entire folder:
+
+1. **Macro → Start Recording**, run the Parakeet command you want (say **Summarize**), then **Stop Recording** and save the macro.
+2. **Macro → Run a Macro on Files/Folders…**, pick your folder (for transcription, set the file filter to your audio types, e.g. `*.m4a`), pick your saved macro, and go.
+3. Parakeet processes every file in turn, writing a result next to each one — watch the activity log narrate the progress.
+
+A few good things to know:
+
+- **It's fast after the first file.** The AI engine and models load once and stay warm for the whole batch — file #1 pays the ~1-second startup, the rest go straight to work.
+- **Your files are safe.** Originals are never modified — results always land in new files. Running the same batch again simply overwrites the previous results.
+- **Settings come from the panel.** The batch uses whatever you've set there: speech model and language, summary template, translation target. Want the same folder in two languages? Change the target and run it again.
+- Documents must be **saved files** (Summarize/Translate need to know where to write), and cloud models in *Agent* mode sit batches out — use API or CLI mode.
+
+*(This also pairs beautifully with **Save audio**: your recorded meetings pile up in `~/Music/Parakeet`, and one batch run turns the whole archive into transcripts.)*
+
+---
+
 # Understanding the activity log
 
 The activity log narrates everything Parakeet does, so you're never guessing. Here's what the common messages mean:
@@ -274,11 +305,10 @@ If anything ever fails, Parakeet's rule is simple: **it degrades, it doesn't blo
 | Where | Function |
 |---|---|
 | Plugins → Parakeet | **Show Parakeet Panel** — open/close the panel |
-| Plugins → Parakeet | **Start / Stop Voice Note** — record into a new tab |
-| Plugins → Parakeet | **Dictate at Caret** — record into the current document at the cursor |
-| Plugins → Parakeet | **Structure Note…** — summarize the active tab |
-| Plugins → Parakeet | **Translate Note…** — translate the active tab |
-| Plugins → Parakeet | **Models && Languages…** — open the model store |
+| Plugins → Parakeet | **Transcribe Audio File…** — quiet, macro-recordable: transcript saved as `<name>_transcript.md` next to the audio file |
+| Plugins → Parakeet | **Summarize** — quiet, macro-recordable: summary saved as `<name>_summary.md` next to the document |
+| Plugins → Parakeet | **Translate** — quiet, macro-recordable: translation saved as `<name>_<Language>.md` next to the document |
+| Plugins → Parakeet | **About Parakeet…** — version and credits |
 | Panel | **Record / Transcribe / Summarize / Translate** buttons |
 | Panel | **Language** (source, 100 + Auto) · **template** · **…** file picker · **Translate to** (target) |
 | Panel | **Detect speakers** · **Meeting mode** · **Use current tab** · **Save audio** checkboxes |
