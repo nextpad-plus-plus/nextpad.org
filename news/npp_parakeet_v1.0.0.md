@@ -1,5 +1,5 @@
 ---
-title: "Parakeet AI Plugin v1.0.0 — Voice notes, meeting transcription, summaries and translation for Nextpad++"
+title: "Parakeet AI Plugin — Voice and meeting transcription, summaries and translation for Nextpad++"
 date: 2026-07-20
 description: A complete guide to Parakeet — a private, on-device voice plugin for Nextpad++. Live transcription, meeting capture with You/Them labels, AI summaries, and translation all across 200 languages. It's your private Granola notepad on device.
 tags: [nextpad++, transcription, whisper, translation, meetings, AI]
@@ -7,7 +7,7 @@ tags: [nextpad++, transcription, whisper, translation, meetings, AI]
 
 ![parakeet-hero](npp_parakeet_v1.0.0/parakeet_logo.png) *Parakeet v1.0.0 — your voice, straight into the editor*
 
-# Parakeet AI Plugin v1.0.0 
+# Parakeet AI Plugin v1.0.0
 
 Parakeet Plugin turns Nextpad++ into a **voice workstation**. Speak, and your words appear in a tab as you talk. Record a zoom meeting and get a transcript neatly labeled **You:** and **Them:**. Turn a voice memo into clean meeting notes or a to-do list. Translate any note into any of **200 languages**. Privacy and simplicity is the goal and **all of it happens on your Mac** — nothing is uploaded anywhere. You can use it on 10 year old Macs and transcribe your yoga instructor translating into English in real-time deep in Bali and it should work fine. 
 
@@ -25,7 +25,7 @@ Parakeet requires **Nextpad++ v1.0.7** and above and installs in one click from 
 
 ---
 
-# Parakeet is about Privacy first
+# Privacy by Design
 
 ![privacy](npp_parakeet_v1.0.0/privacy_screen.png) *Privacy by design*
 
@@ -318,7 +318,7 @@ If anything ever fails, Parakeet's rule is simple: **it degrades, it doesn't blo
 
 # Compatibility
 
-- **Requires**: Nextpad++ **v1.0.7** or newer
+- **Requires**: Nextpad++ **v1.0.7** or later
 - **macOS**: 12.0+ (Intel and Apple Silicon, universal) — the speaker-detection pack needs macOS 15.5+; meeting capture and You/Them labeling work on every supported version
 - **Disk**: ~240 MB installed (bundled speech models included); optional models range 31 MB – 1.7 GB and can be downloaded and deleted individually at any time
 - **Install**: Plugin Admin → Available → Parakeet
