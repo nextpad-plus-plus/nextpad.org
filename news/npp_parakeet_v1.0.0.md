@@ -25,7 +25,7 @@ Parakeet requires **Nextpad++ v1.0.7** and above and installs in one click from 
 
 ---
 
-# Privacy first
+# Parakeet is about Privacy first
 
 ![privacy](npp_parakeet_v1.0.0/privacy_screen.png) *Privacy by design*
 
