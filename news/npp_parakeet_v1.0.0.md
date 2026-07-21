@@ -1,7 +1,7 @@
 ---
-title: "Parakeet AI Plugin — Voice and meeting transcription, summaries and translation for Nextpad++"
+title: "Parakeet AI Plugin for Voice and Meeting Transcription, Summarization and Translation"
 date: 2026-07-20
-description: A complete guide to Parakeet — a private, on-device voice plugin for Nextpad++. Live transcription, meeting capture with You/Them labels, AI summaries, and translation all across 200 languages. It's your private Granola notepad on device.
+description: Parakeet — a private, on-device voice plugin for Nextpad++. Live transcription, meeting capture, AI summaries, and translation across 200 languages. Your private Granola notepad on device.
 tags: [nextpad++, transcription, whisper, translation, meetings, AI]
 ---
 
@@ -9,15 +9,15 @@ tags: [nextpad++, transcription, whisper, translation, meetings, AI]
 
 # Parakeet AI Plugin v1.0.0
 
-Parakeet Plugin turns Nextpad++ into a **voice workstation**. Speak, and your words appear in a tab as you talk. Record a zoom meeting and get a transcript neatly labeled **You:** and **Them:**. Turn a voice memo into clean meeting notes or a to-do list. Translate any note into any of **200 languages**. Privacy and simplicity is the goal and **all of it happens on your Mac** — nothing is uploaded anywhere. You can use it on 10 year old Macs and transcribe your yoga instructor translating into English in real-time deep in Bali and it should work fine. 
+Parakeet Plugin turns Nextpad++ into a **voice workstation**. Speak, and your words appear in a tab as you talk. Record a zoom meeting and get a transcript neatly labeled **You:** and **Them:**. Turn a voice memo into clean meeting notes or a to-do list. Translate any note into any of **200 languages**. Privacy and simplicity is the goal and **all of it happens on your Mac**. Nothing is uploaded anywhere. You can also run batches of voice or notes thru it and get entire folder of video, audio files  transcribed, notes summarized and translated. Parakeet also runs fine, although CPU-only, on 10 year old Macs.   
 
-If you've used an AI meeting-notes app like **Granola Notepad**, Parakeet gives you most of the same experience — record a call, or run it to get a clean transcript, turn it into structured notes and action items — with one decisive difference: it runs **entirely on your Mac, with full privacy and no internet connection required.** No bot joins your call, no audio is uploaded to anyone's servers, and there's no subscription. The plugin is free and the AI models live on your own disk. 
+If you've used an AI meeting-notes app like **Granola Notepad**, Parakeet gives you the same functionality — record a call to get a clean transcript, turn it into structured notes and action items with one decisive difference: it runs **entirely on your Mac, with full privacy and no internet connection required.** No bot joins your call, no audio is uploaded to anyone's servers, and there's no subscription. The plugin is **free** and the AI models live on your own disk. You can choose what model to use in one click. In fact, all functions are reachable in a single click. 
 
-Installing and using it is literally 2 clicks and the UI was designed to give you all controls on a single screen.
+Installing Parakeet and using it is literally 2 clicks and the UI was designed to give you all controls on a single screen.
 
-This guide walks you from install to power-user: how to record, how to run meetings, how the model "store" works, what every setting does, and what the messages in the activity log mean.
+This guide explains how to record, how to run meetings, how the model store works, what every setting does, and what the messages in the activity log mean. If you don't have time to read it, you can just install Parakeet and click away. It's pretty intuitive to use.
 
-Parakeet requires **Nextpad++ v1.0.7** and above and installs in one click from **Plugin Admin → Available**.
+Parakeet requires **Nextpad++ v1.0.7** and later and installs in one click from **Plugin Admin → Available**.
 
 
 ![main-screen](npp_parakeet_v1.0.0/main_screen.png) *Parakeet v1.0.0 main screen*
@@ -32,12 +32,12 @@ Parakeet requires **Nextpad++ v1.0.7** and above and installs in one click from 
 
 Parakeet was built **private by default.** Here is exactly where your voice and text go:
 
-- **Recording, transcription, speaker labels, meeting capture, on-device summaries, parallel audio mp4 format file recording, and on-device translation all run entirely on your Mac, offline.** The AI models are ordinary files sitting in your Library folder. The audio is processed by a small helper app on your machine and is **never uploaded, never stored on a server, and never sent to anyone else.**
+- **Recording, transcription, speaker labels, meeting capture, on-device summaries, parallel audio .m4a format file recording, and on-device translation all run entirely on your Mac, offline.** The AI models are ordinary files sitting in your Library folder. The audio is processed by a small helper app on your machine and is **never uploaded, never stored on a server, and never sent to anyone else.**
 - **Your microphone is only ever touched while you're recording**, and the macOS permission prompt is attributed to *ParakeetEngine* (Parakeet's helper), so you always know who's listening.
 - **The only time any text leaves your Mac** is if *you* deliberately pick a **cloud** summarizer or translator (Claude, ChatGPT, or Grok). Even then, only the text of the one note you're summarizing or translating is sent — over *your* account — and nothing else. Every core feature has a fully local option, so you never have to use the cloud at all.
-- **No account, no sign-in, no subscription** is required for any on-device feature.
+- **No account, no sign-in, no subscription** is required for any on-device feature. It's free.
 
-In short: speak freely. What's said on your Mac stays on your Mac. Parakeet doesn't manage notes for you. It uses Nextpad++, which stores them locally and can track changes or optionally, in your private cloud (can be adjusted in Nextpad++ settings). 
+In short, what's said on your Mac stays on your Mac. Parakeet doesn't manage notes for you. It uses Nextpad++ which stores them locally and can track changes (optionally you can point notes backup to your private cloud in Nextpad++ settings). 
 
 ---
 
@@ -50,9 +50,9 @@ Open the panel with the toolbar parakeet button or **Plugins → Parakeet → Sh
 Two models ship inside the plugin so it works immediately:
 
 - **Whisper Small** — speech recognition, 100 languages, the default transcriber.
-- A **voice-activity detector** that cleanly splits your speech into sentences.
+- A **voice-activity detector** that  splits your speech into sentences.
 
-The standard summarizer (about 1.2 GB) downloads by itself in the background the first time you summarize. Everything else — bigger transcription models, translators, speaker detection — is optional and lives in **Models & Languages** at the bottom of the panel.
+The standard summarizer (about 1.2 GB) downloads by itself in the background the first time you launch Parakeet. Everything else — bigger transcription models, translators, speaker detection — is optional and lives in **Models & Languages** panel.
 
 **The panel at a glance:**
 
@@ -79,19 +79,23 @@ Three ways to capture speech:
 
 - **Voice note** — the button above; a new dated tab.
 - **Dictate into your document** — tick **Use current tab** and the same live transcription flows into the document you're already editing instead (details just below). Perfect for dictating a paragraph into notes or a code comment.
-- **Transcribe a file** — click **…**, choose any audio or video file (anything QuickTime can open), and Parakeet transcribes it into a new tab — including speaker labels if enabled.
+- **Transcribe a file** — click **…**, choose any **audio** or **video** file (anything QuickTime can open), and Parakeet transcribes it into a new tab — including speaker labels if enabled.
 
 ![parakeet-recording](npp_parakeet_v1.0.0/transcribe01.png) *File transcription streaming into a tab*
 
 
-**Prefer everything in one document?** Tick **Use current tab** (next to the meeting checkbox) and Parakeet works inside the tab you're in instead of opening new ones:
+**Prefer everything in one document?** 
+![parakeet-meeting1](npp_parakeet_v1.0.0/current_tab.png)
+Tick **Use current tab** (next to the meeting checkbox) and Parakeet works inside the tab you're in and on selection instead of opening new tabs:
 
 - **Recording & file transcription** — the text **appends to the end** of your tab (no date header, just your words after a blank line).
 - **Summarize & Translate** — with **nothing selected**, the whole document is processed and the result is written **at your cursor**; with **text selected**, only the selection is processed and the result appears **just below it**. Select one paragraph of a long note, press Translate, and the translation lands right underneath.
 
 Your existing text is always safe: Parakeet only appends or inserts — it never replaces what you wrote (speaker labels only touch text Parakeet itself streamed). If the current tab is read-only, it tells you and opens a new tab as usual.
 
-**Want to keep the audio too?** Tick **Save audio** and every live recording is also saved as an **.m4a** file in **`~/Music/Parakeet`**, named with the date and time (e.g. *Voice note 2026-07-19 14.32.05.m4a*). The exact file path appears in the activity log when the recording stops, so it's always one glance away. In **Meeting mode** the file contains **both sides of the call** — your mic and the meeting audio, exactly as transcribed — which makes it perfect for re-transcribing later with a bigger model, or translating the same meeting into several languages from the **…** file picker. Cancelled recordings don't leave a file behind. (Files are compact: about 14 MB per hour of audio.)
+**Want to keep the audio file too?** 
+![parakeet-meeting2](npp_parakeet_v1.0.0/save_audio.png)
+Tick **Save audio** and every live recording is also saved as an **.m4a** file in **`~/Music/Parakeet`**, named with the date and time (e.g. *Voice note 2026-07-19 14.32.05.m4a*). The exact file path appears in the activity log when the recording stops, so it's always one glance away. In **Meeting mode** the file contains **both sides of the call** — your mic and the meeting audio, exactly as transcribed. Parallel audio file recording is great for re-transcribing later with a bigger model, or translating the same meeting into several languages from the **…** file picker. Or even feeding it into Granola Notepad. (Audio files are compact: about 14 MB per hour of audio.) 
 
 ---
 
@@ -99,15 +103,17 @@ Your existing text is always safe: Parakeet only appends or inserts — it never
 
 ![parakeet-meeting](npp_parakeet_v1.0.0/meeting01.png) *Meeting mode + Detect speakers = a labeled meeting transcript*
 
-This is Parakeet's flagship feature. On a Zoom / Teams / Meet call **with headphones on**, the other participants' voices exist only inside your computer's audio output — an ordinary microphone can't hear them. Tick **Meeting mode** and Parakeet records **both sides**: your mic *and* everything you hear.
-
+This is Parakeet's great feature. On a Zoom / Teams / Meet call **with headphones on**, the other participants' voices exist only inside your computer's audio output — an ordinary microphone can't hear them. Tick **Meeting mode** and Parakeet records **both sides**: your mic *and* everything you hear.
+![parakeet-meeting](npp_parakeet_v1.0.0/meeting_mode.png)
 - **One-time setup, one password.** The first time you enable it, Parakeet installs a small audio component called **Parakeet Loopback** — a single administrator authentication, once per Mac, with about two seconds of audio blip while the sound system restarts. You'll never be asked again.
 - **Automatic on every call.** When you press Record, Parakeet quietly routes your sound through a temporary **Parakeet Meeting Output** device (you keep hearing everything normally), captures both streams, and **restores your audio the instant you stop** — even after a crash or force-quit.
-- **You: / Them: labels.** Tick **Detect speakers** *together with* **Meeting mode** and your transcript is grouped into **You:** (your microphone) and **Them:** (the call audio) paragraphs. Because Parakeet knows which audio *stream* each word arrived on, this is more reliable than any voice-fingerprint AI — and it needs no extra models, so it works on every Mac.
+- **You: / Them: labels.** 
+![parakeet-meeting](npp_parakeet_v1.0.0/detect_speakers.png)
+Tick **Detect speakers** *together with* **Meeting mode** and your transcript is grouped into **You:** (your microphone) and **Them:** (the call audio) paragraphs. Because Parakeet knows which audio *stream* each word arrived on, this is more reliable than any voice-fingerprint AI — and it needs no extra models, so it works on every Mac.
 
 > **Tips for great meeting transcripts.** Keep your meeting app's speaker setting on "Same as System" (its default). Wear headphones — without them your mic also hears the speakers, so remote voices can appear twice. And note: the macOS volume keys pause working while a meeting recording is active, so set a comfortable volume before you start.
 
-No bots joining your call, no cloud transcription service, no recording uploaded anywhere.
+No bots joining your call, no cloud transcription service, no recording uploaded anywhere. 
 
 ---
 
@@ -115,7 +121,7 @@ No bots joining your call, no cloud transcription service, no recording uploaded
 
 ![parakeet-summarize](npp_parakeet_v1.0.0/summarize01.png) *A voice memo turned into meeting notes*
 
-**Summarize** rewrites the active tab into a clean, structured note in a brand-new tab (your original is never touched). Pick a **template** from the dropdown next to the Language box — it decides *how* the note is structured:
+**Summarize** rewrites the active tab into a clean, structured note (your original is never touched).  Pick a **template** from the dropdown next to the Language box — it decides *how* the note is structured:
 
 - **Voice memo** — a tidy memo of the key points,
 - **Meeting notes** — decisions, action items, discussion topics,
@@ -123,7 +129,9 @@ No bots joining your call, no cloud transcription service, no recording uploaded
 - **Interview** — a Q&A-style write-up,
 - **Lecture** — organized notes with headings and takeaways.
 
-*(The template only affects **Summarize** — it doesn't change recording or transcription. Each template has its own editable prompt; see **Settings for each model type**.)*
+![parakeet-meeting](npp_parakeet_v1.0.0/template02.png)
+
+*(The template only affects **Summarize** — it doesn't change recording or transcription. Each template has its own editable prompt (you can change it); see **Settings for each model type**.)*
 
 Summaries run one of two ways, your choice per model:
 
@@ -157,7 +165,7 @@ For recordings *without* meeting capture — an interview across a table, a hall
 
 ![parakeet-models](npp_parakeet_v1.0.0/models01.png) *The catalog: every model, its type, size, and languages, with per-row actions*
 
-The bottom half of the panel is a small, private app store for AI models. It's sortable and searchable, and every row has clear actions.
+The bottom half of the panel is a small app store for AI models. It's sortable, and every row has clear Type - where this model is used. You can shuffle which models to use but within a group of models you need a specific model per action like Translation, Summarization, Transcription. 
 
 ### How to download a model
 
@@ -165,7 +173,7 @@ Find the model you want, click **Download**, and Parakeet fetches it in the back
 
 ### How to switch models for a task
 
-Each of the four jobs — transcription, speaker detection, summarizing, translating — uses one **active** model at a time. To change which one, click **Use** on the model you want; it becomes the active model for its type immediately, and the next recording, summary, or translation uses it. If you've never chosen one, Parakeet automatically uses the first installed model of that type (and suggests the catalog's recommended one to download).
+Each of the four jobs — transcription, speaker detection, summarizing, translating — uses one **active** model at a time. To change which one, click **Use** on the model you want; it becomes the active model for its Type immediately, and the next recording, summary, or translation uses it. If you've never chosen one, Parakeet automatically uses the first installed model of that type (and suggests the catalog's recommended one to download).
 
 So, for example: download **Whisper Tiny** and click **Use** to make transcription fast on an older Mac; download **NLLB-200** and click **Use** to make it your translator; download **Gemma 3** and **Use** it if you prefer it over Qwen for summaries.
 
@@ -175,7 +183,7 @@ Click **Delete** and the model's file is removed from your disk to reclaim space
 
 ### Keeping the catalog fresh
 
-New models can appear without updating the plugin — Parakeet periodically pulls a live catalog. Click **Refresh List** to check for new additions right now.
+New models can appear without updating the plugin — Parakeet periodically pulls a live catalog. Click **Refresh List** to check for new additions right now. **Contact me if you wish to add other models to the catalog**.
 
 ### The four model types
 
@@ -200,8 +208,6 @@ Every model has its own **Settings…** (open Models & Languages and click a mod
 - **Vocabulary hints** — a place to type names, jargon, or unusual spellings (e.g. *Nextpad++, Scintilla, Kubernetes, Anya Sharma*) so Parakeet recognizes and spells them correctly.
 ![parakeet-settings01](npp_parakeet_v1.0.0/settings01.png) *Voice Transcription Settings*
 Each speech model remembers its **own** settings, so you can keep Small on beam search and Tiny on greedy, for instance.
-
-
 
 
 ### Speaker Detection settings
@@ -242,7 +248,7 @@ Each speech model remembers its **own** settings, so you can keep Small on beam 
 
 Got fifty meeting recordings to transcribe? A folder of notes to summarize or translate? You don't have to do them one by one.
 
-The three commands in the **Plugins → Parakeet** menu — **Transcribe Audio File**, **Summarize**, and **Translate** — are built for exactly this. Unlike the panel's buttons, they work **quietly in the background**: no new tabs open, no windows pop up, and the result is simply saved as a file **right next to the original**:
+The three commands in the **Plugins → Parakeet** menu — **Transcribe Audio File**, **Summarize**, and **Translate** — are built for exactly this. Unlike the panel's buttons, they work **quietly in the background** and the result is simply saved as a file **right next to the original**:
 
 | You run… | You get… |
 |---|---|
@@ -318,7 +324,7 @@ If anything ever fails, Parakeet's rule is simple: **it degrades, it doesn't blo
 
 # Compatibility
 
-- **Requires**: Nextpad++ **v1.0.7** or later
+- **Requires**: Nextpad++ **v1.0.7** or later although a couple cloud model functions (Claude) only accessible via MCP Server plugin which requires Nextpad++ 1.1.0 or later
 - **macOS**: 12.0+ (Intel and Apple Silicon, universal) — the speaker-detection pack needs macOS 15.5+; meeting capture and You/Them labeling work on every supported version
 - **Disk**: ~240 MB installed (bundled speech models included); optional models range 31 MB – 1.7 GB and can be downloaded and deleted individually at any time
 - **Install**: Plugin Admin → Available → Parakeet
