@@ -18,7 +18,7 @@ Installing Parakeet and using it is literally 2 clicks and the UI was designed t
 This guide explains how to record, how to run meetings, how the model store works, what every setting does, and what the messages in the activity log mean. If you don't have time to read it, you can just install Parakeet and click away. It's pretty intuitive to use.
 
 Parakeet requires **Nextpad++ v1.0.7** and later and installs in one click from **Plugin Admin → Available**.
-
+![plugin_admin](npp_parakeet_v1.0.0/plugin_admin.png) *Parakeet is available in Nextpad++ Plugins Admin*
 
 ![main-screen](npp_parakeet_v1.0.0/main_screen.png) *Parakeet v1.0.0 main screen*
 
@@ -27,7 +27,7 @@ Parakeet requires **Nextpad++ v1.0.7** and later and installs in one click from 
 
 # Privacy by Design
 
-![privacy](npp_parakeet_v1.0.0/privacy_screen.png) *Privacy by design*
+![privacy](npp_parakeet_v1.0.0/privacy_screen.png) 
 
 
 Parakeet was built **private by default.** Here is exactly where your voice and text go:
@@ -43,7 +43,7 @@ In short, what's said on your Mac stays on your Mac. Parakeet doesn't manage not
 
 # Getting started
 
-![parakeet-panel1](npp_parakeet_v1.0.0/parakeet_panel01.png) *The Parakeet panel — Record, Transcribe, Summarize, Translate, and the model store below*
+![parakeet-panel1](npp_parakeet_v1.0.0/parakeet_panel01.png) *The Parakeet panel — Record, Transcribe, Summarize, Translate, and the Model store*
 
 Open the panel with the toolbar parakeet button or **Plugins → Parakeet → Show Parakeet Panel**. The first time you record, macOS asks for microphone access — approve it (the prompt names **ParakeetEngine**).
 
@@ -71,7 +71,7 @@ The standard summarizer (about 1.2 GB) downloads by itself in the background the
 
 # Recording voice notes
 
-![parakeet-recording](npp_parakeet_v1.0.0/record01.png) *Live transcription streaming into a tab*
+![parakeet-recording](npp_parakeet_v1.0.0/record01.png) *Live Voice/Meeting Transcription*
 
 Press **Record** in the panel. Parakeet opens a fresh tab titled with the date and streams your words into it as you speak — a floating level meter confirms it can hear you. Press **Record** again to stop; the transcript wraps up within a few seconds.
 
@@ -81,7 +81,7 @@ Three ways to capture speech:
 - **Dictate into your document** — tick **Use current tab** and the same live transcription flows into the document you're already editing instead (details just below). Perfect for dictating a paragraph into notes or a code comment.
 - **Transcribe a file** — click **…**, choose any **audio** or **video** file (anything QuickTime can open), and Parakeet transcribes it into a new tab — including speaker labels if enabled.
 
-![parakeet-recording](npp_parakeet_v1.0.0/transcribe01.png) *File transcription streaming into a tab*
+![parakeet-recording](npp_parakeet_v1.0.0/transcribe01.png) *Video or audio file Transcription*
 
 
 **Prefer everything in one document?** 
@@ -101,7 +101,7 @@ Tick **Save audio** and every live recording is also saved as an **.m4a** file i
 
 # Meeting capture — transcribe your calls, no bot required
 
-![parakeet-meeting](npp_parakeet_v1.0.0/meeting01.png) *Meeting mode + Detect speakers = a labeled meeting transcript*
+![parakeet-meeting](npp_parakeet_v1.0.0/meeting01.png)
 
 This is Parakeet's great feature. On a Zoom / Teams / Meet call **with headphones on**, the other participants' voices exist only inside your computer's audio output — an ordinary microphone can't hear them. Tick **Meeting mode** and Parakeet records **both sides**: your mic *and* everything you hear.
 ![parakeet-meeting](npp_parakeet_v1.0.0/meeting_mode.png)
@@ -119,7 +119,7 @@ No bots joining your call, no cloud transcription service, no recording uploaded
 
 # Summarize — from rambling to structured
 
-![parakeet-summarize](npp_parakeet_v1.0.0/summarize01.png) *A voice memo turned into meeting notes*
+![parakeet-summarize](npp_parakeet_v1.0.0/summarize01.png) *Summarize text into a structured Note*
 
 **Summarize** rewrites the active tab into a clean, structured note (your original is never touched).  Pick a **template** from the dropdown next to the Language box — it decides *how* the note is structured:
 
@@ -129,7 +129,7 @@ No bots joining your call, no cloud transcription service, no recording uploaded
 - **Interview** — a Q&A-style write-up,
 - **Lecture** — organized notes with headings and takeaways.
 
-![parakeet-meeting](npp_parakeet_v1.0.0/template02.png)
+![parakeet-meeting](npp_parakeet_v1.0.0/template02.png) *Choose the Summarization template*
 
 *(The template only affects **Summarize** — it doesn't change recording or transcription. Each template has its own editable prompt (you can change it); see **Settings for each model type**.)*
 
@@ -144,7 +144,7 @@ Summaries run one of two ways, your choice per model:
 
 # Translate — 200 languages, on your Mac
 
-![parakeet-translate](npp_parakeet_v1.0.0/translate01.png) *The Translate row — pick a target language, get a new tab*
+![parakeet-translate](npp_parakeet_v1.0.0/translate01.png) *Translate*
 
 Pick a target language in the **Translate to** row and press **Translate**. The active tab is translated into a new tab with its paragraph structure intact. Install whichever translators you like from the catalog:
 
@@ -163,7 +163,7 @@ For recordings *without* meeting capture — an interview across a table, a hall
 
 # Models & Languages — your private model store
 
-![parakeet-models](npp_parakeet_v1.0.0/models01.png) *The catalog: every model, its type, size, and languages, with per-row actions*
+![parakeet-models](npp_parakeet_v1.0.0/models01.png) *Model pane - every model, its type, size, and languages, with per-row actions*
 
 The bottom half of the panel is a small app store for AI models. It's sortable, and every row has clear Type - where this model is used. You can shuffle which models to use but within a group of models you need a specific model per action like Translation, Summarization, Transcription. 
 
@@ -244,7 +244,7 @@ Each speech model remembers its **own** settings, so you can keep Small on beam 
 
 # Batch mode: run Parakeet on a whole folder at once
 
-![batch_mode](npp_parakeet_v1.0.0/batch_mode.png) *Batch mode*
+![batch_mode](npp_parakeet_v1.0.0/batch_mode.png)
 
 Got fifty meeting recordings to transcribe? A folder of notes to summarize or translate? You don't have to do them one by one.
 
