@@ -18,6 +18,7 @@ Installing Parakeet and using it is literally 2 clicks and the UI was designed t
 This guide explains how to record, how to run meetings, how the model store works, what every setting does, and what the messages in the activity log mean. If you don't have time to read it, you can just install Parakeet and click away. It's pretty intuitive to use.
 
 Parakeet requires **Nextpad++ v1.0.7** and later and installs in one click from **Plugin Admin → Available**.
+
 ![plugin_admin](npp_parakeet_v1.0.0/plugin_admin.png) *Parakeet is available in Nextpad++ Plugins Admin*
 
 ![main-screen](npp_parakeet_v1.0.0/main_screen.png) *Parakeet v1.0.0 main screen*
