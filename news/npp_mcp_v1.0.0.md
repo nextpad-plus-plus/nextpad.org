@@ -17,6 +17,9 @@ This guide takes you from "off" to "using it well": how to connect each assistan
 
 Requires **Nextpad++ v1.1.0**. Installs in one click from **Plugin Admin → Available**.
 
+![mcp-panel](npp_mcp_v1.0.0/plugin_admin.png) *Nextpad++ Plugin Admin*
+
+
 ---
 
 # Safety and privacy first
