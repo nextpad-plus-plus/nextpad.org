@@ -165,7 +165,7 @@ A community-contributed plugin by Anthony Nunez: select a word and every other o
 
 ---
 
-![onyx](npp_v1.1.0_updates/onyx-tiny02.png)
+![onyx](npp_v1.1.0_updates/onyx-tiny03.png)
 
 # Things to come in early 2027 and some are AI
 
