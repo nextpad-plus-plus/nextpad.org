@@ -162,6 +162,20 @@ A community-contributed plugin by Anthony Nunez: select a word and every other o
 
 **Also updated:** **Beads Viewer 0.9.3** (new icon, refreshed viewer app).
 
+
+---
+
+![onyx](npp_v1.1.0_updates/onyx-tiny02.png)
+
+# Things to come in early 2027 and some are AI
+
+I started working on the Nextpad++ code name **Onyx** (Onyx plugin). If you know Obsidian Notepad, it will be Obsidian on steroids with much more streamlined AI capabilities at a tiny fraction of Obsidian size. We have a lot of interesting ported plugins for Nextpad++, let's make them work well with each other.
+
+**Tiny** is a tiny memory footprint but mighty enterprise-level workflow automation server that can run on any OS. Run your enterprise or AI workflows. Run your local workflows or run it with as many Tiny nodes as you wish as a mesh/cluster. Nextpad++ will have a plugin to create and manage these workflows. Tiny will have plugin ecosystem too. With AI, you will be able to build whatever flavor custom plugins you can think of.        
+
+And all of these are coming to Linux soon.
+
+
 ---
 
 # Thanks to our contributors
