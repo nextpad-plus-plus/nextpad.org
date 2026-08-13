@@ -1,5 +1,5 @@
 ---
-title: "Nextpad++ for Linux — v1.1.0 Release notes"
+title: "Nextpad++ for Linux v1.1.0 Release notes"
 date: 2026-08-13
 description: Nextpad++ arrives on Linux as the full native GTK4 port of Notepad++, at feature parity with the macOS edition from day one. 99 languages, 137 UI translations, 22 themes, 26 native plugins in a 5 MB download that installs in seconds on Ubuntu, Fedora, Debian, Mint, openSUSE and Arch.
 tags: [nextpad++, linux, gtk4, first release, version 1.1.0, plugins, notepad++, ubuntu, fedora, debian]
