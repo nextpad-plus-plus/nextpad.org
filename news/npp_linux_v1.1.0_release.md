@@ -11,7 +11,7 @@ tags: [nextpad++, linux, gtk4, first release, version 1.1.0, plugins, notepad++,
  <download-button href="https://nextpad.org/download/linux.html" variant="primary" icon="download">Download Nextpad++ for Linux</download-button>
 </div>
 
-# Nextpad++ for Linux it's Here
+# Nextpad++ for Linux is Here
 
 You asked for it in macOS release thread, and the answer was always "soon". Today, *soon* ships. **Nextpad++ v1.1.0 for Linux** is the full native port of Notepad++ for the Linux desktop. It's not an Electron wrapper, not a Wine bottle, not Flatpak, not GNUstep not a half-finished clone. A real GTK4 application built on the same Scintilla/Lexilla engine as Notepad++ itself, carrying the **same version number as the macOS edition because it carries the same features**: the two ports were developed against each other line by line, dialog by dialog, until the parity audit ran out of things to list. (Note Nextpad++ is a full port of Notepad++ for Windows)
 
