@@ -81,8 +81,7 @@ That includes the AI pair that headlined the macOS 1.1.0 release — **MCP Serve
 - **Every menu item** of the macOS edition is present or deliberately relocated (~340 items).
 - All **16 Preferences panes**, the 5-tab Shortcut Mapper, the full Encoding tree (the Linux menu actually carries 45 character sets to macOS's 43).
 - **Config compatibility**: `config.xml`, `shortcuts.xml`, themes, User Defined Languages, autoCompletion and functionList definitions use the same schema — the "Settings on cloud" feature can point both a Mac and a Linux box at the same synced folder.
-- The **plugin host speaks a strict superset** of the macOS plugin API (72 host messages vs 64), so plugin authors port once and gain both platforms.
-- The handful of exceptions are documented platform limits, not omissions — e.g. *Always on Top* and window keep-above are things the Wayland protocol simply doesn't allow any app to do.
+- The **plugin host speaks a strict set** of the macOS plugin API, so plugin authors port once and gain both platforms.
 
 Your muscle memory transfers too: shortcuts follow the **Windows Notepad++ layout** (Ctrl+Q comments, Ctrl+Shift+S saves all, F3 finds next…), and the new **Window menu** brings the macOS goodies — tab sorting, the Windows… dialog, New Window, and Move to Monitor on multi-head X11 setups.
 
@@ -90,7 +89,7 @@ Your muscle memory transfers too: shortcuts follow the **Windows Notepad++ layou
 
 # Small. Actually small.
 
-We are a little obsessed with this part. In an era when a chat client idles at a gigabyte:
+I was a little obsessed with this part. In an era when a chat client idles at a half a gig:
 
 | | Nextpad++ for Linux |
 |---|---|
@@ -147,7 +146,7 @@ The snap is strictly confined: it reaches your files through the standard snap `
 
 ## Staying current
 
-Nextpad++ checks for new releases **once a day** (needs a network connection) and shows the same quiet in-app update card the macOS edition got in 1.1.0 — new version number, download button, no nagging, nothing installed behind your back. You can toggle it in *Preferences → General* or check manually from the Help menu. Snap installs update through the store instead.
+Nextpad++ for Linux checks for new releases **once a day** (needs a network connection) and shows the same quiet in-app update card the macOS edition got in 1.1.0 — new version number, download button, no nagging, nothing installed behind your back. You can toggle it in *Preferences → General* or check manually from the Help menu. This feature is disabled if you installed via App Center and updates are tracked through the store instead.
 
 ---
 
@@ -206,7 +205,7 @@ If you hit anything else, the issue tracker is open — see below.
 
 # What's next
 
-Nextpad++ Mac and Linux versions will go hand-in-hand to keep parity. More plugins to come to Linux. The roadmap published with macOS 1.1.0 — the **Onyx** knowledge-base plugin and the **Tiny** workflow-automation server — is being built cross-platform from the start. The days of "coming to Linux soon" ended today: from v1.1.0 on, macOS and Linux ship together, same versions, same features, same plugins.
+**Nextpad++ Mac and Linux versions will go hand-in-hand to keep parity**. More plugins to come to Linux. The roadmap published with macOS 1.1.0 — the **Onyx** knowledge-base plugin and the **Tiny** workflow-automation server — is being built cross-platform from the start. The days of "coming to Linux soon" ended today: from v1.1.0 on, macOS and Linux ship together, same versions, same features, same plugins.
 
 ---
 
