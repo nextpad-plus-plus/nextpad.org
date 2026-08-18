@@ -1,5 +1,5 @@
 ---
-title: "MCP Server v1.0.0 — A guide to connecting your AI assistant to Nextpad++"
+title: "MCP Server v1.0.0 — Connect your AI assistant to Nextpad++"
 date: 2026-07-30
 description: A complete, go-through-and-use guide to the MCP Server plugin — let AI assistants like Claude Code, Cursor, and Claude Desktop see and (with your permission) edit the documents you have open in Nextpad++, live, including unsaved changes.
 tags: [nextpad++, mcp, plugin, AI, claude, model context protocol]

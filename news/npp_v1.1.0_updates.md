@@ -1,5 +1,5 @@
 ---
-title: "Nextpad++ version 1.1.0 Release notes"
+title: "Nextpad++ version 1.1.0 Release"
 date: 2026-08-04
 description: Nextpad++ version 1.1.0 Release notes — file associations, better update notifications, side panels that dock left and remember themselves, improved printing, big fixes for non-English text, and the arrival of the AI plugins — Parakeet, MCP Server and LuaScript.
 tags: [nextpad++, version 1.1.0, new release, plugins, AI, parakeet, mcp, file associations]
