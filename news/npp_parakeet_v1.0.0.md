@@ -1,5 +1,5 @@
 ---
-title: "Parakeet AI Plugin for Voice and Meeting Transcription, Summarization and Translation"
+title: "Parakeet AI Plugin for Voice, Meeting Transcription, Summarization , Translation on Mac and Linux"
 date: 2026-08-31
 description: Parakeet — a private, on-device voice plugin for Nextpad++. Live transcription, meeting capture, AI summaries, and translation across 200 languages. Your private Granola notepad on device.
 tags: [nextpad++, transcription, whisper, translation, meetings, AI]
@@ -9,9 +9,9 @@ tags: [nextpad++, transcription, whisper, translation, meetings, AI]
 
 # Parakeet AI Plugin v1.0.0
 
-Parakeet Plugin turns Nextpad++ into a **voice workstation**. Speak, and your words appear in a tab as you talk. Record a zoom meeting and get a transcript neatly labeled **You:** and **Them:**. Turn a voice memo into clean meeting notes or a to-do list. Translate any note into any of **200 languages**. Privacy and simplicity is the goal and **all of it happens on your Mac**. Nothing is uploaded anywhere. You can also run batches of voice or notes thru it and get entire folder of video, audio files  transcribed, notes summarized and translated. Parakeet is also available for Linux with full GPU support and also runs fine, although CPU-only, on 10 year old Macs.   
+Parakeet Plugin turns Nextpad++ into a **voice workstation**. Speak, and your words appear in a tab as you talk. Record a zoom meeting and get a transcript neatly labeled **You:** and **Them:**. Turn a voice memo into clean meeting notes or a to-do list. Translate any note into any of **200 languages**. Privacy and simplicity is the goal and **all of it happens on your Mac or Linux**. Nothing is uploaded anywhere. You can also run batches of voice or notes thru it and get entire folder of video, audio files  transcribed, notes summarized and translated. As of August 31, 2026 Parakeet is also available for **Linux** with full GPU support. It also runs fine, although CPU-only, on 10 year old Macs.
 
-If you've used an AI meeting-notes app like **Granola Notepad**, Parakeet gives you the same functionality — record a call to get a clean transcript, turn it into structured notes and action items with one decisive difference: it runs **entirely on your Mac, with full privacy and no internet connection required.** No bot joins your call, no audio is uploaded to anyone's servers, and there's no subscription. The plugin is **free** and the AI models live on your own disk. You can choose what model to use in one click. In fact, all functions are reachable in a single click. 
+If you've used an AI meeting-notes app like **Granola Notepad**, Parakeet gives you the same functionality — record a call to get a clean transcript, turn it into structured notes and action items with one decisive difference: it runs **entirely on your Mac or Linux, with full privacy and no internet connection required.** No bot joins your call, no audio is uploaded to anyone's servers, and there's no subscription. The plugin is **free** and the AI models live on your own disk. You can choose what model to use in one click. In fact, all functions are reachable in a single click. 
 
 Installing Parakeet and using it is literally 2 clicks and the UI was designed to give you all controls on a single screen.
 
@@ -21,7 +21,7 @@ Parakeet requires **Nextpad++ v1.0.7** and later and installs in one click from 
 
 ![plugin_admin](npp_parakeet_v1.0.0/plugin_admin.png) *Parakeet is available in Nextpad++ Plugins Admin*
 
-![main-screen](npp_parakeet_v1.0.0/main_screen.png) *Parakeet v1.0.0 main screen*
+![main-screen](npp_parakeet_v1.0.0/main_screen.png) *Parakeet v1.0.0 main screen (left - macOS and right - Linux)*
 
 
 ---
@@ -33,12 +33,12 @@ Parakeet requires **Nextpad++ v1.0.7** and later and installs in one click from 
 
 Parakeet was built **private by default.** Here is exactly where your voice and text go:
 
-- **Recording, transcription, speaker labels, meeting capture, on-device summaries, parallel audio .m4a format file recording, and on-device translation all run entirely on your Mac, offline.** The AI models are ordinary files sitting in your Library folder. The audio is processed by a small helper app on your machine and is **never uploaded, never stored on a server, and never sent to anyone else.**
+- **Recording, transcription, speaker labels, meeting capture, on-device summaries, parallel audio .m4a format file recording, and on-device translation all run entirely on your Mac or Linux offline.** The AI models are ordinary files sitting in your Library folder. The audio is processed by a small helper app on your machine and is **never uploaded, never stored on a server, and never sent to anyone else.**
 - **Your microphone is only ever touched while you're recording**, and the macOS permission prompt is attributed to *ParakeetEngine* (Parakeet's helper), so you always know who's listening.
-- **The only time any text leaves your Mac** is if *you* deliberately pick a **cloud** summarizer or translator (Claude, ChatGPT, or Grok). Even then, only the text of the one note you're summarizing or translating is sent — over *your* account — and nothing else. Every core feature has a fully local option, so you never have to use the cloud at all.
+- **The only time any text leaves your Mac or Linux** is if *you* deliberately pick a **cloud** summarizer or translator (Claude, ChatGPT, or Grok). Even then, only the text of the one note you're summarizing or translating is sent — over *your* account — and nothing else. Every core feature has a fully local option, so you never have to use the cloud at all.
 - **No account, no sign-in, no subscription** is required for any on-device feature. It's free.
 
-In short, what's said on your Mac stays on your Mac. Parakeet doesn't manage notes for you. It uses Nextpad++ which stores them locally and can track changes (optionally you can point notes backup to your private cloud in Nextpad++ settings). 
+In short, what's said on your Mac or Linux stays on your Mac or Linux. Parakeet doesn't manage notes for you. It uses Nextpad++ which stores them locally and can track changes (optionally you can point notes backup to your private cloud in Nextpad++ settings). 
 
 ---
 
@@ -114,7 +114,7 @@ This is Parakeet's great feature. On a Zoom / Teams / Meet call **with headphone
 - **Automatic on every call.** When you press Record, Parakeet quietly routes your sound through a temporary **Parakeet Meeting Output** device (you keep hearing everything normally), captures both streams, and **restores your audio the instant you stop** — even after a crash or force-quit.
 - **You: / Them: labels.** 
 ![parakeet-meeting](npp_parakeet_v1.0.0/detect_speakers.png)
-Tick **Detect speakers** *together with* **Meeting mode** and your transcript is grouped into **You:** (your microphone) and **Them:** (the call audio) paragraphs. Because Parakeet knows which audio *stream* each word arrived on, this is more reliable than any voice-fingerprint AI — and it needs no extra models, so it works on every Mac.
+Tick **Detect speakers** *together with* **Meeting mode** and your transcript is grouped into **You:** (your microphone) and **Them:** (the call audio) paragraphs. Because Parakeet knows which audio *stream* each word arrived on, this is more reliable than any voice-fingerprint AI — and it needs no extra models, so it works on every Mac or Linux.
 
 > **Tips for great meeting transcripts.** Keep your meeting app's speaker setting on "Same as System" (its default). Wear headphones — without them your mic also hears the speakers, so remote voices can appear twice. And note: the macOS volume keys pause working while a meeting recording is active, so set a comfortable volume before you start.
 
@@ -140,14 +140,14 @@ No bots joining your call, no cloud transcription service, no recording uploaded
 
 Summaries run one of two ways, your choice per model:
 
-- **On your Mac**, with a local model — Qwen 3.5 (the auto-downloaded default), Gemma 3, Granite 3.3, or Llama 3.2 — completely private.
+- **On your Mac or Linux**, with a local model — Qwen 3.5 (the auto-downloaded default), Gemma 3, Granite 3.3, or Llama 3.2 — completely private.
 - **In the cloud**, with **Claude, ChatGPT, or Grok** — the strongest quality, when you're comfortable sending that one note to a provider you already pay for.
 
 (Cloud connection options and per-model settings are covered in **Settings for each model type**, below.)
 
 ---
 
-# Translate — 200 languages, on your Mac
+# Translate — 200 languages, on your Mac or Linux
 
 ![parakeet-translate](npp_parakeet_v1.0.0/translate01.png) *Translate*
 
@@ -162,7 +162,7 @@ Pick a target language in the **Translate to** row and press **Translate**. The 
 
 # Detect speakers for in-person recordings
 
-For recordings *without* meeting capture — an interview across a table, a hallway chat — **Detect speakers** labels the transcript **Speaker 1 / Speaker 2 / …** using on-device voice fingerprints. Install the **Speaker detection pack** (about 31 MB) from Models & Languages. *(This pack needs macOS 15.5 or newer. In meeting capture, the superior You/Them labeling is used instead and works on every supported macOS.)*
+For recordings *without* meeting capture — an interview across a table, a hallway chat — **Detect speakers** labels the transcript **Speaker 1 / Speaker 2 / …** using on-device voice fingerprints. Install the **Speaker detection pack** (about 31 MB) from Models & Languages. *(This pack needs macOS 15.5 or newer. In meeting capture, the superior You/Them labeling is used instead and works on every supported macOS or Linux.)*
 
 ---
 
@@ -180,7 +180,7 @@ Find the model you want, click **Download**, and Parakeet fetches it in the back
 
 Each of the four jobs — transcription, speaker detection, summarizing, translating — uses one **active** model at a time. To change which one, click **Use** on the model you want; it becomes the active model for its Type immediately, and the next recording, summary, or translation uses it. If you've never chosen one, Parakeet automatically uses the first installed model of that type (and suggests the catalog's recommended one to download).
 
-So, for example: download **Whisper Tiny** and click **Use** to make transcription fast on an older Mac; download **NLLB-200** and click **Use** to make it your translator; download **Gemma 3** and **Use** it if you prefer it over Qwen for summaries.
+So, for example: download **Whisper Tiny** and click **Use** to make transcription fast on an older Mac or Linux; download **NLLB-200** and click **Use** to make it your translator; download **Gemma 3** and **Use** it if you prefer it over Qwen for summaries.
 
 ### What happens if you delete a model
 
@@ -194,7 +194,7 @@ New models can appear without updating the plugin — Parakeet periodically pull
 
 | Type | What it does | Examples |
 |---|---|---|
-| **Voice Transcription** | speech → text | Whisper **Tiny** (31 MB, fastest — great for older Macs), **Base**, **Small** (bundled default), full-precision Small, **Large v3 Turbo** (best quality) |
+| **Voice Transcription** | speech → text | Whisper **Tiny** (31 MB, fastest — great for older Macs or Linux laptops), **Base**, **Small** (bundled default), full-precision Small, **Large v3 Turbo** (best quality) |
 | **Speaker Detection** | who spoke when | segmentation + voice-fingerprint models (ResNet, CAM++) |
 | **Summarizer** | note → structured summary | Qwen 3.5 (0.8B / 2B), Gemma 3 (1B / 4B), Granite 3.3, Llama 3.2, plus Claude / ChatGPT / Grok (cloud) |
 | **Translator** | any language → any language | **NLLB-200 (200 langs)**, MADLAD-400 (419 langs), LLM translators, cloud translators |
@@ -208,7 +208,7 @@ Every model has its own **Settings…** (open Models & Languages and click a mod
 ### Voice Transcription (Whisper) settings
 
 - **Live block length** (2–8 seconds) — how often live text appears while you talk. Shorter = snappier updates; longer = slightly more accurate at the seams.
-- **Accuracy** — **Fast (greedy)** for speed, or **Best (beam search)** for the highest accuracy. Beam search is ideal for transcribing files or on a fast Mac.
+- **Accuracy** — **Fast (greedy)** for speed, or **Best (beam search)** for the highest accuracy. Beam search is ideal for transcribing files or on a fast Macs or Linux laptops.
 - **Translate to English** — Whisper's built-in speech translation: speak any language and the transcript comes out in English, at no extra cost.
 - **Vocabulary hints** — a place to type names, jargon, or unusual spellings (e.g. *Nextpad++, Scintilla, Kubernetes, Anya Sharma*) so Parakeet recognizes and spells them correctly.
 ![parakeet-settings01](npp_parakeet_v1.0.0/settings01.png) *Voice Transcription Settings*
@@ -306,7 +306,7 @@ If anything ever fails, Parakeet's rule is simple: **it degrades, it doesn't blo
 
 # Performance
 
-- **Apple Silicon (M-series)** — transcription and summarization run on the GPU (Metal). A voice note transcribes in real time, and NLLB translates ~3,000 characters in about ten seconds on an M2.
+- **Apple Silicon (M-series) or Linux laptops with Nvidia GPUs** — transcription and summarization run on the GPU (Metal). A voice note transcribes in real time, and NLLB translates ~3,000 characters in about ten seconds on an M2.
 - **Intel Macs** — fully supported back to 2015-era machines. v1.0.0 ships hand-tuned **AVX2** speech kernels for Intel (several times faster than a generic build — verified on 2015 and 2016 MacBooks) plus an optimized translation engine, so even a 2015 MacBook Air transcribes usably with the **Base** or **Tiny** model. On an older Mac, switching transcription to **Tiny** is the single biggest speed-up.
 
 ---
@@ -337,4 +337,4 @@ If anything ever fails, Parakeet's rule is simple: **it degrades, it doesn't blo
 
 ---
 
-*Parakeet is part of the growing family of macOS-native Nextpad++ plugins. It pairs beautifully with the **MCP Server** plugin — let your own AI assistant read and write your notes (see the companion MCP Server v1.1.0 guide).*
+*Parakeet is part of the growing family of macOS and Linux native Nextpad++ plugins. It pairs beautifully with the **MCP Server** plugin — let your own AI assistant read and write your notes (see the companion MCP Server v1.1.0 guide).*
