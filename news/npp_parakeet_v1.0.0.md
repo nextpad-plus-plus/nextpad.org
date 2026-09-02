@@ -1,6 +1,6 @@
 ---
 title: "Parakeet AI Plugin for Voice and Meeting Transcription, Summarization and Translation"
-date: 2026-07-20
+date: 2026-08-31
 description: Parakeet — a private, on-device voice plugin for Nextpad++. Live transcription, meeting capture, AI summaries, and translation across 200 languages. Your private Granola notepad on device.
 tags: [nextpad++, transcription, whisper, translation, meetings, AI]
 ---
@@ -9,7 +9,7 @@ tags: [nextpad++, transcription, whisper, translation, meetings, AI]
 
 # Parakeet AI Plugin v1.0.0
 
-Parakeet Plugin turns Nextpad++ into a **voice workstation**. Speak, and your words appear in a tab as you talk. Record a zoom meeting and get a transcript neatly labeled **You:** and **Them:**. Turn a voice memo into clean meeting notes or a to-do list. Translate any note into any of **200 languages**. Privacy and simplicity is the goal and **all of it happens on your Mac**. Nothing is uploaded anywhere. You can also run batches of voice or notes thru it and get entire folder of video, audio files  transcribed, notes summarized and translated. Parakeet also runs fine, although CPU-only, on 10 year old Macs.   
+Parakeet Plugin turns Nextpad++ into a **voice workstation**. Speak, and your words appear in a tab as you talk. Record a zoom meeting and get a transcript neatly labeled **You:** and **Them:**. Turn a voice memo into clean meeting notes or a to-do list. Translate any note into any of **200 languages**. Privacy and simplicity is the goal and **all of it happens on your Mac**. Nothing is uploaded anywhere. You can also run batches of voice or notes thru it and get entire folder of video, audio files  transcribed, notes summarized and translated. Parakeet is also available for Linux with full GPU support and also runs fine, although CPU-only, on 10 year old Macs.   
 
 If you've used an AI meeting-notes app like **Granola Notepad**, Parakeet gives you the same functionality — record a call to get a clean transcript, turn it into structured notes and action items with one decisive difference: it runs **entirely on your Mac, with full privacy and no internet connection required.** No bot joins your call, no audio is uploaded to anyone's servers, and there's no subscription. The plugin is **free** and the AI models live on your own disk. You can choose what model to use in one click. In fact, all functions are reachable in a single click. 
 
@@ -44,7 +44,11 @@ In short, what's said on your Mac stays on your Mac. Parakeet doesn't manage not
 
 # Getting started
 
-![parakeet-panel1](npp_parakeet_v1.0.0/parakeet_panel01.png) *The Parakeet panel — Record, Transcribe, Summarize, Translate, and the Model store*
+![parakeet-panel1](npp_parakeet_v1.0.0/parakeet_panel01.png) *The Parakeet macOS panel — Record, Transcribe, Summarize, Translate, and the Model store*
+
+
+![parakeet-panel_linux](npp_parakeet_v1.0.0/parakeet_panel_linux.png) *The Parakeet Linux panel — Record, Transcribe, Summarize, Translate, and the Model store*
+
 
 Open the panel with the toolbar parakeet button or **Plugins → Parakeet → Show Parakeet Panel**. The first time you record, macOS asks for microphone access — approve it (the prompt names **ParakeetEngine**).
 
@@ -327,6 +331,7 @@ If anything ever fails, Parakeet's rule is simple: **it degrades, it doesn't blo
 
 - **Requires**: Nextpad++ **v1.0.7** or later although a couple cloud model functions (Claude) only accessible via MCP Server plugin which requires Nextpad++ 1.1.0 or later
 - **macOS**: 12.0+ (Intel and Apple Silicon, universal) — the speaker-detection pack needs macOS 15.5+; meeting capture and You/Them labeling work on every supported version
+- **Linux**: Ubuntu, Fedora, Debian, Kubuntu, RHELL, Arch, Mint, OPenSUSE etc. Supports Nvidia and Apple M silicon. Has full parity with macOS Parakeet plugin.
 - **Disk**: ~240 MB installed (bundled speech models included); optional models range 31 MB – 1.7 GB and can be downloaded and deleted individually at any time
 - **Install**: Plugin Admin → Available → Parakeet
 
