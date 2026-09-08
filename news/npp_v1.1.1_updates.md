@@ -1,6 +1,6 @@
 ---
 title: "Nextpad++ version 1.1.1 Release"
-date: 2026-09-15
+date: 2026-09-08
 description: Nextpad++ version 1.1.1 Release notes for macOS and Linux — npp, the new Nextpad++ terminal editor (works over SSH), bottom dockable panels, small fixes to localization, keyboard shortcuts, new Arch Linux packages, and a cleanup of docking API for plugin developers.
 tags: [nextpad++, version 1.1.1, new release, macos, linux, terminal, tui, npp, ssh, panels, localization]
 ---
