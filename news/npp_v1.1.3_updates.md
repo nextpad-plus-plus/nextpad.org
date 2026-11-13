@@ -59,9 +59,9 @@ It's a real Nextpad++ with the same Scintilla engine, the same syntax highlighti
 
 Nextpad++ for iOS has a growing number of plugins to mimic plugins we have on iOS and Linux. More will be added with every new iOS version release. Some non-MIT license plugins I have to write from scratch.
 
-**I set a small one-time $ fee for the iOS (iPhone + iPad) app to cover some costs to help me keep everything else I release free.** One time fee covers all updates and future releases forever. You are not only getting iOS app but contributing to all free applications, plugin development, server costs, and some new free enterprise-level apps I'm planning to release in early 2027 at [tailrace.ai](https://tailrace.ai). 
+**I set a small one-time $ fee for the iOS (iPhone + iPad) app to cover some costs to help me keep everything else I release free.** One time fee covers all updates and future releases forever. You are not only getting iOS app but contributing to all free applications, plugin development and porting, server costs, maintenance, and some new free enterprise-level apps I'm planning to release in early 2027 at [tailrace.ai](https://tailrace.ai). I'm super super greatful for your support. It allows me to move forward.
 
-**You will see a separate detailed help manual for iOS Nextpad++ shortly.** 
+**You load a separate detailed help manual for iOS Nextpad++ shortly.** 
 
 
 ---
