@@ -147,10 +147,12 @@ The plugin pipeline is far from empty and the next batch of ports is already bui
 
 ---
 
-# Thanks to our contributors
+# Thanks to our sponsors and contributors
 
-This release leans on community code more than any before it. **Adrian Curtin** had an outstanding cycle — eleven commits landed here, across four fronts: the user-defined keyword support, the whole Document Map color series, the dark-mode-at-launch behavior, and the plugin ID groundwork that made the catalog headroom possible. **chocholom** was right behind with four pull requests ported this cycle, spanning the multi-selection case work, rectangular sorting, the hash line-ending behavior, and the groundwork for plugin shortcuts. **Shri Saran Raj N** improved the Command Palette breadcrumbs and Preferences alignment. And the reporters: the 1.67-million-match performance report, the dark-mode Find-status screenshot, the VoiceOver feedback — each one shaped something above. The trackers are open: https://github.com/nextpad-plus-plus/nextpad-plus-plus-macos/issues for the Mac and https://github.com/nextpad-plus-plus/nextpad-plus-plus-linux/issues for Linux.
+Some of you sponsor the project on GitHub, some send via Stripe or PayPal, and some of you buy the iOS app. Every one of those notifications reaches me, and I don’t take a single one for granted. Your support keeps the macOS and Linux versions free, and it lets me keep building new free tools. Thank You.
 
+Also this release leans on community code more than any before it. **Adrian Curtin** had an outstanding cycle — eleven commits landed here, across four fronts: the user-defined keyword support, the whole Document Map color series, the dark-mode-at-launch behavior, and the plugin ID groundwork that made the catalog headroom possible. **chocholom** was right behind with four pull requests ported this cycle, spanning the multi-selection case work, rectangular sorting, the hash line-ending behavior, and the groundwork for plugin shortcuts. **Shri Saran Raj N** improved the Command Palette breadcrumbs and Preferences alignment. And the reporters: the 1.67-million-match performance report, the dark-mode Find-status screenshot, the VoiceOver feedback — each one shaped something above. The trackers are open: https://github.com/nextpad-plus-plus/nextpad-plus-plus-macos/issues for the Mac and https://github.com/nextpad-plus-plus/nextpad-plus-plus-linux/issues for Linux.
+ 
 ---
 
 # Compatibility
