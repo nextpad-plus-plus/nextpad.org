@@ -9,7 +9,7 @@ tags: [nextpad++, version 1.1.3, macos, linux, ios, device sync, themes]
 
 # Nextpad++ v1.1.3 — Release Notes
 
-Successor to **v1.1.2** (October 6th, 2026). As always now, **macOS and Linux ship together, from one set of release notes** — everything below applies to both platforms unless it says otherwise. However, Linux v1.1.3 will be available for download in a week (It was delayed due to my iOS work and I'm still testing it).
+Successor to **v1.1.2** (October 6th, 2026). As always now, **macOS and Linux ship together, from one set of release notes** — everything below applies to both platforms unless it says otherwise.
 
 Last time I promised a quiet polish release and delivered one. This time there was no such plan. 1.1.3 brings a headline feature that's been cooking for months. A whole new iOS member of the Nextpad++ family and a unified search engine, and a few extra themes. 
 
