@@ -84,7 +84,11 @@ Around the engine, the whole search experience moved forward:
 
 The 1.1.2 notes promised dark themes that VS Code and Sublime folks would feel at home in. Delivered: **Tokyo Night** and **Tokyo Night Light** join the bundled collection re-drawn for Nextpad++'s stylers.
 
-![tokyo-night](npp_v1.1.3_updates/tokyo-theme.webp) *Tokyo Night*
+![tokyo-night](npp_v1.1.3_updates/tokyo-theme.webp) *Tokyo Night on Mac*
+
+
+![tokyo-night-linux](npp_v1.1.3_updates/tokyo-theme-linux.webp) *Tokyo Night on Linux*
+
 
 Beyond the new pair, this cycle put real depth into how code gets colored:
 
