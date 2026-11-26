@@ -9,9 +9,9 @@ tags: [device sync, nextpad++, version 1.1.3, macos, linux, ios, device sync]
 
 # Device Sync - User Guide
 
-*Nextpad++ 1.1.3 for macOS · Nextpad++ for iPhone & iPad · November 2026*
+*Nextpad++ 1.1.3 for macOS and Linux · Nextpad++ for iPhone & iPad · November 2026*
 
-Device Sync lets you walk away from your Mac mid-thought and pick up the same tabs — including unsaved ones — on your iPhone, iPad, or another Mac, then bring the edits back. It is built around one rule: **nothing leaves your machine until you turn it on, and nothing is shared except what you see in your tab bar.**
+Device Sync lets you walk away from your Mac mid-thought and pick up the same tabs — including unsaved ones — on your iPhone, iPad, another Mac or Linux, then bring the edits back. It is built around one rule: **nothing leaves your machine until you turn it on, and nothing is shared except what you see in your tab bar.**
 
 ---
 
@@ -60,6 +60,8 @@ If your Mac, iPhone and iPad use the same Apple ID, this is the simplest setup, 
 A **Nextpad++** folder with the app's icon appears in iCloud Drive, in Finder and in the Files app. Nextpad++ manages it, so you don't need to open it.
 
 **How long things take.** iCloud decides when files move, so allow anything from a few seconds to a couple of minutes. iPhones and iPads only pick up changes while Nextpad++ is open — see [Phone & tablet particulars](#phone--tablet-particulars).
+
+Note that Linux doesn't really have access to your Apple iCloud drive and to enable device sync across 3 platforms: Mac, iOS, and Linux you need to use some Cloud provider which all 3 have access to.
 
 ---
 
